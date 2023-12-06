@@ -22,8 +22,7 @@ My research interests are centered on causal inference from interventions. Durin
 
 I have been selected a [2020 IBM AI Horizons Scholar](https://airc.rpi.edu/aih-scholars) as part of [RPI-IBM AIRC program](https://airc.rpi.edu/) and worked closely with a number of collaborators, including [Dr. Karthikeyan Shanmugam](https://sites.google.com/a/utexas.edu/karthiksh/) and [Dr. Prasanna Sattigeri](https://pronics2004.github.io/). 
 
-
-<!-- 🔈: I am on the job market ✨✨ -->
+🔈: I am on the job market for research scientist and postdoc positions ✨✨
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
