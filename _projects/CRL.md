@@ -18,7 +18,7 @@ We currently have two preprints. In both papers, we establish the connections be
 
 **General Identifiability and Achievability for Causal Representation Learning**: This paper is the extended version of the CRL@NeurIPS2023 Oral paper *Score-based Causal Representation Learning with Interventions: Nonparametric Identifiability*. In this paper, we focus on a general nonparametric transform from latent variables to observed variables.  We show that two hard intervention per node suffices for perfect identifiability. Importantly, we provide the first provably correct algorithm in a fully nonparametric setting, while also relaxing some of the assumptions in recent related work (e.g., we don’t require the latent variables to be faithful to the latent DAG).
 
-{% include figure.html path="assets/pdf/Varici2023-CRL-workshop-poster.pdf" title="Poster" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Varici2023-CRL-workshop-poster.jpeg" title="Poster" class="img-fluid rounded z-depth-1" %}
 Poster from CRL Workshop @ NeurIPS 2023 
 
 
