@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 4
-cv_pdf: Varici_CV_January2024.pdf
+cv_pdf: Varici_CV.pdf
 ---
 
 - title: General Information
