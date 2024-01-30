@@ -38,9 +38,9 @@ cv_pdf: Varici_CV.pdf
       institution: Rensselaer Polytechnic Institute
       year: 2018 - 2023
       description:
-        - Developed identifiability results and algorithms for causal representation learning via interventions 
-        - Designed and analyzed causal bandit algorithms with relaxed assumption compared to the state-of-the-art
-        - Developed consistent algorithms to learn from interventional data in both causally sufficient and insufficient systems
+        - Established identifiability results and algorithms for causal representation learning via interventions 
+        - Designed and analyzed causal bandit algorithms with relaxed assumptions compared to the state-of-the-art
+        - Designed consistent algorithms to learn from interventional data in both causally sufficient and insufficient systems
         - Researched on structure learning of shared subgraphs for multiple undirected graphical models. 
     
     - title: Visiting Research Scholar
@@ -56,7 +56,7 @@ cv_pdf: Varici_CV.pdf
     - title: Intern
       institution: Speech Enabled Smart Technologies (Istanbul, Turkey)
       year: 2017
-      description: Built deep learning algorithms for a speaker identity verification systems
+      description: Built deep learning algorithms for speaker identity verification systems
 
 
 
