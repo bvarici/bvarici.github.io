@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Robust Causal Bandits for Linear Models]([https://arxiv.org/abs/2310.15450](https://arxiv.org/abs/2310.19794v2) is published in JSAIT. 
+Our paper [Robust Causal Bandits for Linear Models](https://arxiv.org/abs/2310.19794v2) is published in JSAIT. 
