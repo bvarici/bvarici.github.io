@@ -10,17 +10,11 @@ related_publications: varici2023score, varici2023general, varici2024score
 
 **AISTATS 2024 (oral): General Identifiability and Achievability for Causal representation Learning**
 
-Paper: https://proceedings.mlr.press/v238/varici24a.html
-
-Code: https://github.com/bvarici/score-general-id-CRL
-
-Talk (from NeurIPS2023 CRL Workshop): https://neurips.cc/virtual/2023/74252
+[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk](https://neurips.cc/virtual/2023/74252)
 
 **Preprint: Score-based Causal Representation Learning: Linear and General Transformations**: 
 
-Paper: https://arxiv.org/abs/2402.00849
-
-Code: https://github.com/acarturk-e/score-based-crl
+[Paper](https://arxiv.org/abs/2402.00849)  [Code](https://github.com/acarturk-e/score-based-crl)
 
 =======================
 
