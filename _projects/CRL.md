@@ -32,7 +32,7 @@ In our papers, we establish the connections between score functions (gradient of
 - We further tighten the previous result and show that when the latent causal model is sufficiently nonlinear, perfect DAG recovery becomes possible using soft interventions. Furthermore, we recover a latent representation that is Markov with respect to the latent DAG, preserving the true conditional independence relationships.
 - We design Linear Score-based Causal Latent Estimation via Interventions (LSCALE-I) algorithm that achieves above identifiability guarantees.
 
-(A preliminary version of LSCALE-I and some of the identifiability results are first presented in our manuscript https://arxiv.org/abs/2301.08230)
+(A preliminary version of LSCALE-I and some of the identifiability results are first presented in [our manuscript](https://arxiv.org/abs/2301.08230).
 
 
 **General Identifiability and Achievability for Causal Representation Learning**: This AISTATS 2024 (oral) paper is the extended version of the CRL@NeurIPS2023 Oral paper *Score-based Causal Representation Learning with Interventions: Nonparametric Identifiability*. In this paper, we focus on a general nonparametric transform from latent variables to observed variables. 
