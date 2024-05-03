@@ -8,9 +8,9 @@ category: work
 related_publications: varici2023score, varici2023general, varici2024score
 ---
 
-**AISTATS 2024 (oral): General Identifiability and Achievability for Causal representation Learning**
+**AISTATS 2024 (oral): General Identifiability and Achievability for Causal Representation Learning**
 
-[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk](https://neurips.cc/virtual/2023/74252)
+[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk (CRL@NeurIPS2023)](https://neurips.cc/virtual/2023/74252)
 
 **Preprint: Score-based Causal Representation Learning: Linear and General Transformations**: 
 
@@ -30,14 +30,14 @@ In our papers, we establish the connections between score functions (gradient of
 - We show that one hard intervention per node suffices to guarantee perfect identifiability. 
 - We show that one soft intervention per node suffices to guarantee identifiability up to ancestors – transitive closure of the latent DAG is recovered and latent variables are recovered up to a linear function of their ancestors. Importantly, these results are tight since identifying the latent linear models beyond ancestors using soft interventions is known to be impossible.
 - We further tighten the previous result and show that when the latent causal model is sufficiently nonlinear, perfect DAG recovery becomes possible using soft interventions. Furthermore, we recover a latent representation that is Markov with respect to the latent DAG, preserving the true conditional independence relationships.
-- We design Linear Score-based Causal Latent Estimation via Interventions (LSCALE-I) algorithm that achieves above identifiability guarantees.
+- We design Linear Score-based Causal Latent Estimation via Interventions (LSCALE-I) algorithm that achieves the above identifiability guarantees.
 
 (A preliminary version of LSCALE-I and some of the identifiability results are first presented in [our manuscript](https://arxiv.org/abs/2301.08230).
 
 
 **General Identifiability and Achievability for Causal Representation Learning**: This AISTATS 2024 (oral) paper is the extended version of the CRL@NeurIPS2023 Oral paper *Score-based Causal Representation Learning with Interventions: Nonparametric Identifiability*. In this paper, we focus on a general nonparametric transform from latent variables to observed variables. 
 
-- We show that two hard intervention per node suffices for perfect identifiability. This result generalizes the recent results in the literature in two ways. First, we do not require the commonly adopted faithfulness assumption on latent causal models. Secondly, we assume the learner does not know which pair of environments intervene on the same node.
+- We show that two hard interventions per node suffice for perfect identifiability. This result generalizes the recent results in the literature in two ways. First, we do not require the commonly adopted faithfulness assumption on latent causal models. Secondly, we assume the learner does not know which pair of environments intervene on the same node.
 - More importantly, on achievability, we design the first provably correct algorithm that recovers $$\mathcal{G}_{Z}$$ and $$Z$$ perfectly. This algorithm is referred to as Generalized Score-based Causal Latent Estimation via Interventions (GSCALE-I).
 
 
