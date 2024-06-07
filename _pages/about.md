@@ -16,13 +16,12 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am a final year PhD student at the Department of Electrical, Computer and Systems Engineering (ECSE), Rensselaer Polytechnic Institute ([RPI](https://www.ecse.rpi.edu/)), advised by [Prof. Ali Tajer](https://www.isg-rpi.com/). 
+I am an incoming postdoctoral researcher in the Machine Learning Department at Carnegie Mellon University, working with [Pradeep Ravikumar](https://www.cs.cmu.edu/~pradeepr/). 
 
-My research interests are centered on causal inference from interventions. During my PhD, I have focused on leveraging the shared causal mechanisms and the role of interventions across different data environments. Specifically, I have been developing methodology for causal representation learning, sequential intervention design, and causal structure learning.
+Previously, I recently obtained my Ph.D. degree in the Department of Electrical, Computer and Systems Engineering (ECSE), Rensselaer Polytechnic Institute ([RPI](https://www.ecse.rpi.edu/)), advised by [Prof. Ali Tajer](https://www.isg-rpi.com/). I was also an [IBM AI Horizons Scholar](https://airc.rpi.edu/aih-scholars) and worked closely with a number of collaborators, including [Dr. Karthikeyan Shanmugam](https://sites.google.com/a/utexas.edu/karthiksh/) and [Dr. Prasanna Sattigeri](https://pronics2004.github.io/). 
 
-I have been selected a [2020 IBM AI Horizons Scholar](https://airc.rpi.edu/aih-scholars) as part of [RPI-IBM AIRC program](https://airc.rpi.edu/) and worked closely with a number of collaborators, including [Dr. Karthikeyan Shanmugam](https://sites.google.com/a/utexas.edu/karthiksh/) and [Dr. Prasanna Sattigeri](https://pronics2004.github.io/). 
+My research interests are centered on causal inference from interventions. During my Ph.D., I have focused on leveraging the shared causal mechanisms and the role of interventions across different data environments. Specifically, I have been developing methodology for causal representation learning, sequential intervention design, and causal structure learning.
 
-🔈: I am on the job market for research scientist and postdoc positions ✨✨
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
