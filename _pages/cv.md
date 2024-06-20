@@ -20,7 +20,7 @@ cv_pdf: Varici_CV.pdf
   contents:
     - title: Ph.D. Electrical Engineering
       institution: Rensselaer Polytechnic Institute
-      year: 2024 (expected)
+      year: 2024
       description:
         - Thesis Causal Learning via Interventions Estimation and Design
         - Advisor Prof. Ali Tajer
@@ -34,6 +34,10 @@ cv_pdf: Varici_CV.pdf
 - title: Experience
   type: time_table
   contents:
+    - title: Postdoctoral Researcher
+      institution: Carnegie Mellon University, Machine Learning Department
+      year: 2024 - present
+  
     - title: Research Assistant
       institution: Rensselaer Polytechnic Institute
       year: 2018 - 2023
@@ -63,6 +67,10 @@ cv_pdf: Varici_CV.pdf
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items:
+        - Allen B. Dumont Prize from RPI
+          
     - year: 2023
       items: 
         - UAI Top Reviewer Award and Scholarship  
@@ -71,7 +79,7 @@ cv_pdf: Varici_CV.pdf
         - Belsky Award for Computational Sciences and Engineering
     - year: 2022
       items: 
-        - Jerry Dziuba ECSE Graduate Student Service Award
+        - Jerry Dziuba ECSE Graduate Student Service Award at RPI
     - year: 2020
       items:
         - The Rensselaer-IBM AI Research Collaboration Fellowship
