@@ -11,10 +11,10 @@
   contents:
     - title: Ph.D. Electrical Engineering
       institution: Rensselaer Polytechnic Institute
-      year: 2024 (expected)
+      year: 2024
       description:
-        - Thesis Causal Learning via Interventions Estimation and Design
-        - Advisor Prof. Ali Tajer
+        - Thesis: Causal Learning via Interventions Estimation and Design
+        - Advisor: Ali Tajer
     - title: M.S. Electrical Engineering
       institution: Rensselaer Polytechnic Institute
       year: 2020
@@ -25,13 +25,17 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Postdoctoral Researcher
+      institution: Carnegie Mellon University, Machine Learning Department
+      year: 07/2024 - present
+  
     - title: Research Assistant
       institution: Rensselaer Polytechnic Institute
       year: 2018 - 2023
       description:
-        - Developed identifiability results and algorithms for causal representation learning via interventions 
+        - Established identifiability results and algorithms for causal representation learning via interventions 
         - Designed and analyzed causal bandit algorithms with relaxed assumptions compared to the state-of-the-art
-        - Developed consistent algorithms to learn from interventional data in both causally sufficient and insufficient systems
+        - Designed consistent algorithms to learn from interventional data in both causally sufficient and insufficient systems
         - Researched on structure learning of shared subgraphs for multiple undirected graphical models. 
     
     - title: Visiting Research Scholar
@@ -54,18 +58,19 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items:
+        - Allen B. Dumont Prize
+          
     - year: 2023
       items: 
-        - NeurIPS Top Reviewer Award
-    - year: 2023
-      items: 
-        - UAI Top Reviewer Award
+        - UAI Top Reviewer Award and Scholarship  
     - year: 2022
       items: 
         - Belsky Award for Computational Sciences and Engineering
     - year: 2022
       items: 
-        - Jerry Dziuba ECSE Graduate Student Service Award
+        - Jerry Dziuba ECSE Graduate Student Service Award at RPI
     - year: 2020
       items:
         - The Rensselaer-IBM AI Research Collaboration Fellowship
@@ -81,4 +86,3 @@
   contents:
     - name: Reviewer
       value: IEEE Transactions on Signal Processing, NeurIPS (2021, 2022, 2023), UAI (2023), AAAI (2023), AISTATS (2024)
-
