@@ -69,7 +69,7 @@ cv_pdf: Varici_CV.pdf
   contents:
     - year: 2024
       items:
-        - Allen B. Dumont Prize from RPI
+        - Allen B. Dumont Prize
           
     - year: 2023
       items: 
