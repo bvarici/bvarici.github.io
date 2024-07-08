@@ -22,8 +22,8 @@ cv_pdf: Varici_CV.pdf
       institution: Rensselaer Polytechnic Institute
       year: 2024
       description:
-        - Thesis Causal Learning via Interventions Estimation and Design
-        - Advisor Prof. Ali Tajer
+        - Thesis: Causal Learning via Interventions Estimation and Design
+        - Advisor: Prof. Ali Tajer
     - title: M.S. Electrical Engineering
       institution: Rensselaer Polytechnic Institute
       year: 2020
@@ -36,7 +36,7 @@ cv_pdf: Varici_CV.pdf
   contents:
     - title: Postdoctoral Researcher
       institution: Carnegie Mellon University, Machine Learning Department
-      year: 2024 - present
+      year: 07/2024 - present
   
     - title: Research Assistant
       institution: Rensselaer Polytechnic Institute
