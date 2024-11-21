@@ -58,11 +58,11 @@ built on our theoretical results to recover the learnable causal relationships.
 As discussed in our previous paper, observational data is not sufficient to distinguish true causal relationships (*true edges*) from spurious ones (*emergent edges*).
 In this paper, our objective is to identify true edges via interventions on the mixture model. 
 - First, we establish matching necessary and sufficient intervention sizes for identifying the mixture parents of a node (union of parent sets of a node in the mixture).
-We show that interventions $I$ with size at most $|pa_{m}(i)|+1$ are sufficient to identify mixture parents $|pa_{m}(i)|$ of the node $i$. 
-We also show that interventions with size $|pa_{m}(i)|+1$ are necessary at the worst-case.
-- We specialize this result for a mixture of trees, and show the necessary and sufficient intervention size becomes $K+1$ for a mixture of $K$ trees.
+We show that interventions $$I$$ with size at most $$|{\rm pa}_{\rm m}(i)|+1$$ are sufficient to identify mixture parents $$|{\rm pa}_{\rm m}(i)|$$ of the node $$i$$. 
+We also show that interventions with size $$|{\rm pa}_{\rm m}(i)|+1$$ are necessary at the worst-case.
+- We specialize this result for a mixture of trees, and show the necessary and sufficient intervention size becomes $$K+1$$ for a mixture of $$K$$ trees.
 - Next, we design an adaptive algorithm that identifies all directed edges of the individual
-DAGs in the mixture by using $\mathcal{O}(n^2)$, where $n$ is the number of variables. Remarkably,
+DAGs in the mixture by using $$\mathcal{O}(n^2)$$, where $$n$$ is the number of variables. Remarkably,
 the maximum size of the interventions used in our algorithm is optimal if the mixture
 ancestors of a node (i.e., the union of its ancestors across all DAGs) do not form a cycle.
 - Finally, we show that the gap between the maximum intervention size used by the
