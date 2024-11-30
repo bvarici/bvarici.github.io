@@ -5,8 +5,14 @@ title: Score-based Causal Representation Learning
 img: assets/img/CRL.png
 importance: 1
 category: work
-related_publications: varici2023score, varici2023general, varici2024score
+related_publications: varici2023score, varici2023general, varici2024score, varici2024linear, acarturk2024sample
 ---
+
+**NeurIPS 2024: Linear Causal Representation Learning from Unknown Multi-node Interventions** 
+[Paper](https://openreview.net/forum?id=weemASPtzg)  [Code](https://github.com/acarturk-e/umni-crl)
+
+**NeurIPS 2024: Sample Complexity of Interventional Causal Representation Learning**
+[Paper](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn)
 
 **AISTATS 2024 (oral): General Identifiability and Achievability for Causal Representation Learning**
 
