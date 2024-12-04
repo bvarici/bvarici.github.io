@@ -8,19 +8,19 @@ category: work
 related_publications: varici2023score, varici2023general, varici2024score, varici2024linear, acarturk2024sample
 ---
 
-**NeurIPS 2024: Linear Causal Representation Learning from Unknown Multi-node Interventions** 
+### Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)
 
-[Paper](https://openreview.net/forum?id=weemASPtzg)  [Code](https://github.com/acarturk-e/umni-crl)
+[Paper](https://openreview.net/forum?id=weemASPtzg)  [Code](https://github.com/acarturk-e/umni-crl) [Poster](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
 
-**NeurIPS 2024: Sample Complexity of Interventional Causal Representation Learning**
+### Sample Complexity of Interventional Causal Representation Learning (NeurIPS 2024)
 
 [Paper](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn)
 
-**AISTATS 2024 (oral): General Identifiability and Achievability for Causal Representation Learning**
+### General Identifiability and Achievability for Causal Representation Learning (AISTATS 2024 - oral)
 
-[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk (CRL@NeurIPS2023)](https://neurips.cc/virtual/2023/74252)
+[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk (CRL@NeurIPS2023)](https://neurips.cc/virtual/2023/74252) [Poster](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)
 
-**Preprint: Score-based Causal Representation Learning: Linear and General Transformations**: 
+### Score-based Causal Representation Learning: Linear and General Transformations (under submission) 
 
 [Paper](https://arxiv.org/abs/2402.00849)  [Code](https://github.com/acarturk-e/score-based-crl)
 
