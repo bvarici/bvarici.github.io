@@ -8,25 +8,26 @@ category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
 ---
 
-<h4 style="font-size: 20px; font-weight: normal;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</h4>
-
-<span style="font-size: 36px;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</span>
-
-### Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)
+<span style="font-size: 24px;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</span>
 
 [Paper](https://openreview.net/forum?id=weemASPtzg)  [Code](https://github.com/acarturk-e/umni-crl) [Poster](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
 
-### Sample Complexity of Interventional Causal Representation Learning (NeurIPS 2024)
+
+<span style="font-size: 24px;">Sample Complexity of Interventional Causal Representation Learning (NeurIPS 2024)</span>
 
 [Paper](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn)
 
-### General Identifiability and Achievability for Causal Representation Learning (AISTATS 2024 - oral)
+<span style="font-size: 24px;">General Identifiability and Achievability for Causal Representation Learning  (AISTATS 2024 - oral)</span>
 
-[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk (CRL@NeurIPS2023)](https://neurips.cc/virtual/2023/74252) [Poster](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)
+[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [Code](https://github.com/bvarici/score-general-id-CRL) [Talk](https://neurips.cc/virtual/2023/74252) [Poster](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)
 
-### Score-based Causal Representation Learning: Linear and General Transformations (under submission) 
+<span style="font-size: 24px;">Score-based Causal Representation Learning: Linear and General Transformations (under submission)</span>
 
 [Paper](https://arxiv.org/abs/2402.00849)  [Code](https://github.com/acarturk-e/score-based-crl)
+
+<span style="font-size: 24px;">Score-based Causal Representation Learning with Interventions</span>
+
+[Paper](https://arxiv.org/abs/2301.08230) 
 
 =======================
 
