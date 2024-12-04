@@ -8,6 +8,8 @@ category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
 ---
 
+<h4 style="font-size: 20px; font-weight: normal;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</h4>
+
 <span style="font-size: 36px;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</span>
 
 ### Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)
