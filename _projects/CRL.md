@@ -8,6 +8,8 @@ category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
 ---
 
+<span style="font-size: 18px;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</span>
+
 ### Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)
 
 [Paper](https://openreview.net/forum?id=weemASPtzg)  [Code](https://github.com/acarturk-e/umni-crl) [Poster](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
