@@ -35,11 +35,11 @@ related_publications: varici2023score, varici2024general, varici2024score, varic
 {% include figure.html path="assets/img/crl_figures/CRL_problem.jpg" title="" class="img-fluid rounded z-depth-1" %}
 
 
-In causal representation learning (CRL), we consider a data-generating process in which the high-dimensional observations $$X$$ are generated from low-dimensional, causaly-related variables $$Z$$ through an unknown transformation $$g$$ as $$X=g(Z)$$. The causal relationships among the latent variables are captured by a directed acyclic graph (DAG) $$\cal{G}_{Z}$$ over $$Z$$.
+In causal representation learning (CRL), we consider a data-generating process in which the high-dimensional observations $$X$$ are generated from low-dimensional, causaly-related variables $$Z$$ through an unknown transformation $$g$$ as $$X=g(Z)$$. The causal relationships among the latent variables are captured by a directed acyclic graph (DAG) $${\cal{G}}_{Z}$$ over $$Z$$.
 
-CRL is the process of inverting the data generation-process for using the observed data $$X$$ and recovering (i) the causal structure $\cal{G}_{Z}$$ and (ii) the latent causal variables $$Z$$. We focus on two central questions: 
+CRL is the process of inverting the data generation-process for using the observed data $$X$$ and recovering (i) the causal structure $$\cal{G}_{Z}$$ and (ii) the latent causal variables $$Z$$. We focus on two central questions: 
 
-1. **Identifiability**: Determining the necessary and sufficient conditions under which $\cal{G}_{Z}$$ and $$Z$$ can be recovered. The scope of identifiability (e.g., perfect or partial) critically depends on the extent of information available about the data and the underlying data-generation process.
+1. **Identifiability**: Determining the necessary and sufficient conditions under which $${\cal{G}}_{Z}$$ and $$Z$$ can be recovered. The scope of identifiability (e.g., perfect or partial) critically depends on the extent of information available about the data and the underlying data-generation process.
 
 2. **Achievability**: Designing algorithms that can recover $$Z$$ and $$\mathcal{G}_{Z}$$, while maintaining identifiability guarantees. Note that identifiability results can be non-constructive as well, without specifying feasible algorithms. Hence, we make the distinction and aim to design practical algorithms for achieving constructive identifiability results.
 
@@ -73,7 +73,7 @@ How we use this property to guide our learning of an inverse transform? Consider
 
 {% include figure.html path="assets/img/crl_figures/intuition.jpg" title="" class="img-fluid rounded z-depth-1" %}
 
-- **Latent score differences can be computed from observed score differences**: So far, all the nice properties of score functions above are for latent variables, since these properties stem from the causal relationships among the latents and the interventions. However, we have only access to observed $$X$$ variables. In terms of pure identifiability objective, one can suggest computing the score functions of $\hat{Z}$ for every possible encoder $h$, which is infeasible. Instead, we take a constructive approach and show that latent score differences can be computed from observed score differences. Specifically, $$s_{\hat Z}(\hat z) - s_{\hat Z}^{m}(\hat z) = [\text{Jac.}_{{h^{-1}}}(\hat z)]^{\top} (s_X(x) - s^{m}_X(x))$$.
+- **Latent score differences can be computed from observed score differences**: So far, all the nice properties of score functions above are for latent variables, since these properties stem from the causal relationships among the latents and the interventions. However, we have only access to observed $$X$$ variables. In terms of pure identifiability objective, one can suggest computing the score functions of $\hat{Z}$ for every possible encoder $h$, which is infeasible. Instead, we take a constructive approach and show that latent score differences can be computed from observed score differences. Specifically, $$s_{\hat{Z}}({\hat{z}}) - s_{{\hat{Z}}}^{m}({\hat{z}}) = \text{Jac.}_{{h^{-1}}}(\hat z)^{\top} (s_X(x) - s^{m}_X(x))$$.
 
 
 
