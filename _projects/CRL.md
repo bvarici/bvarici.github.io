@@ -73,7 +73,7 @@ How we use this property to guide our learning of an inverse transform? Consider
 
 {% include figure.html path="assets/img/crl_figures/intuition.jpg" title="" class="img-fluid rounded z-depth-1" %}
 
-- **Latent score differences can be computed from observed score differences**: So far, all the nice properties of score functions above are for latent variables, since these properties stem from the causal relationships among the latents and the interventions. However, we have only access to observed $$X$$ variables. In terms of pure identifiability objective, one can suggest computing the score functions of $\hat{Z}$ for every possible encoder $$h$$, which is infeasible. Instead, we take a constructive approach and show that latent score differences can be computed from observed score differences using the Jacobian of $$h^{-1}$$. Specifically, $$s_{\hat{Z}} ({\hat{z}}) - s_{\hat{Z}}^{m}({\hat{z}}) = J_{h^{-1}}({\hat{z}}) s_{X} (x) - s_{X}^{m}(x) $$.
+- **Latent score differences can be computed from observed score differences**: So far, all the nice properties of score functions above are for latent variables, since these properties stem from the causal relationships among the latents and the interventions. However, we have only access to observed $$X$$ variables. In terms of pure identifiability objective, one can suggest computing the score functions of $\hat{Z}$ for every possible encoder $$h$$, which is infeasible. Instead, we take a constructive approach and show that latent score differences can be computed from observed score differences using the Jacobian of $$h^{-1}$$. Specifically, $$s_{\hat{Z}} ({\hat{z}}) - s_{\hat{Z}}^{m}({\hat{z}}) = J_{h^{-1}}({\hat{z}})^{\top} (s_{X} (x) - s_{X}^{m}(x)) $$.
 
 
 
