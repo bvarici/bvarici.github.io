@@ -2,7 +2,7 @@
 layout: page
 title: Score-based Causal Representation Learning
 #description: a project with a background image
-img: assets/img/CRL.png
+img: assets/img/crl_figures/CRL.png
 importance: 1
 category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
@@ -30,28 +30,50 @@ related_publications: varici2023score, varici2024general, varici2024score, varic
 
 =======================
 
-Project summary:
+### Project summary:
 
-In causal representation learning (CRL), we consider a latent space in which the latent variables $$Z$$ are causally related, and high-dimensional observations $$X$$ are generated from $$Z$$ through an unknown transformation as $$X=g(Z)$$. Inverting the data generating process to uniquely recover $$Z$$ and the latent directed acyclic graph (DAG) $$\cal{G}_{Z}$$ over $$Z$$ is known to be impossible by just using the observational data $$X$$. In this project, we focus on using interventional distributions to make this process viable. Specifically, we aim to address two central questions of CRL: 1) **Identifiability**, which refers to determining the sufficient conditions under which $$Z$$ and $$\mathcal{G}_{Z}$$ can be uniquely recovered, and 2) **Achievability**, which pertains to designing algorithms that can recover $$Z$$ and $$\mathcal{G}_{Z}$$, while maintaining identifiability guarantees. We use the term perfect identifiability to refer to the best possible identifiability results that neglect the inevitable indeterminacies (element-wise permutation and scaling/diffeomorphism). 
-
-
-In our papers, we establish the connections between score functions (gradient of the log-likelihood) and interventional distributions. Specifically, we show that differences of score functions across different environment pairs contain all the information about the latent DAG. Leveraging this property, we show that the data-generating process can be inverted by finding the inverse transform that minimizes the score differences in the latent space. Using this approach, we develop constructive proofs of identifiability along with algorithms in various settings.
-
-**Score-based Causal Representation Learning: Linear and General Transformations**: In this paper, we focus on a linear transform from latent space to observed variables without putting restrictions on the latent causal model. In this setting, our main results are as follows:
-
-- We show that one hard intervention per node suffices to guarantee perfect identifiability. 
-- We show that one soft intervention per node suffices to guarantee identifiability up to ancestors – transitive closure of the latent DAG is recovered and latent variables are recovered up to a linear function of their ancestors. Importantly, these results are tight since identifying the latent linear models beyond ancestors using soft interventions is known to be impossible.
-- We further tighten the previous result and show that when the latent causal model is sufficiently nonlinear, perfect DAG recovery becomes possible using soft interventions. Furthermore, we recover a latent representation that is Markov with respect to the latent DAG, preserving the true conditional independence relationships.
-- We design Linear Score-based Causal Latent Estimation via Interventions (LSCALE-I) algorithm that achieves the above identifiability guarantees.
-
-(A preliminary version of LSCALE-I and some of the identifiability results are first presented in [our manuscript](https://arxiv.org/abs/2301.08230).
+{% include figure.html path="assets/img/crl_figures/CRL_problem.jpg" title="" class="img-fluid rounded z-depth-1" %}
 
 
-**General Identifiability and Achievability for Causal Representation Learning**: This AISTATS 2024 (oral) paper is the extended version of the CRL@NeurIPS2023 Oral paper *Score-based Causal Representation Learning with Interventions: Nonparametric Identifiability*. In this paper, we focus on a general nonparametric transform from latent variables to observed variables. 
+In causal representation learning (CRL), we consider a data-generating process in which the high-dimensional observations $$X$$ are generated from low-dimensional, causaly-related variables $$Z$$ through an unknown transformation $$g$$ as $$X=g(Z)$$. The causal relationships among the latent variables are captured by a directed acyclic graph (DAG) $$\cal{G}_{Z}$$ over $$Z$$.
 
-- We show that two hard interventions per node suffice for perfect identifiability. This result generalizes the recent results in the literature in two ways. First, we do not require the commonly adopted faithfulness assumption on latent causal models. Secondly, we assume the learner does not know which pair of environments intervene on the same node.
-- More importantly, on achievability, we design the first provably correct algorithm that recovers $$\mathcal{G}_{Z}$$ and $$Z$$ perfectly. This algorithm is referred to as Generalized Score-based Causal Latent Estimation via Interventions (GSCALE-I).
+CRL is the process of inverting the data generation-process for using the observed data $$X$$ and recovering (i) the causal structure $\cal{G}_{Z}$$ and (ii) the latent causal variables $$Z$$. We focus on two central questions: 
 
+1. **Identifiability**: Determining the necessary and sufficient conditions under which $\cal{G}_{Z}$$ and $$Z$$ can be recovered. The scope of identifiability (e.g., perfect or partial) critically depends on the extent of information available about the data and the underlying data-generation process.
+
+2. **Achievability**: Designing algorithms that can recover $$Z$$ and $$\mathcal{G}_{Z}$$, while maintaining identifiability guarantees. Note that identifiability results can be non-constructive as well, without specifying feasible algorithms. Hence, we make the distinction and aim to design practical algorithms for achieving constructive identifiability results.
+
+
+**Why is identifiability difficult?** Identifiability is known to be impossible without additional supervision or sufficient statistical diversity among the samples of the observed data $$X$$. For instance, for the true transform $$g$$ and another invertible function $$a$$, we have $$(g \circ g^{-1})(X)=X$$ and $$(g \circ a^{-1}) \circ (a \circ g^{-1})(X)=X$$. Hence, inverse transform $$g^{-1}$$ cannot via ensuring reconstruction of $$X$$. As an extreme simplification, linear mixing of *independent* Gaussian variables (i.e., a graph with no edge). Since Gaussians are rotation-invariant, we cannot distinguish between $$Z$$ and $$R \circ Z$$ for any rotation matrix $$R$$. 
+
+Therefore, to ensure identifiability, we need to look for a reasonable combination of (i) assumptions on the data-generation (model class we consider), and (ii) richer observations.
+
+### Interventional CRL
+
+In our work, we rely on *interventions* on the latent causal space to provide richer observations and sufficient statistical diversity to enable identifiability. Specifically, in addition to observational environment, we consider a set of given interventional environments, in which a subset of nodes are intervened in each. In this framework, we only use *distribution level* information, meaning that we use the interventions as a weak form of supervision via having access to only the pair of distributions before and after an intervention (as opposed to requiring pairs of observed and intervened samples). This allows us:
+- model distribution shifts via changes in causal mechanisms
+- contrast interventional vs. observational distributions
+- if changes are sparse, gives a natural way to restrain the solution set
+
+
+{% include figure.html path="assets/img/crl_figures/interventional_environments.jpg" title="" class="img-fluid rounded z-depth-1" %}
+
+Ideally, one would prefer no restriction on intervention size, type, or knowledge. In our papers, we consider different settings, e.g. single-node vs. multi-node interventions and soft vs. hard interventions.
+
+
+### Score-based methodology
+
+In our papers, we establish the connections between **score functions** (gradient of the log-density) and interventional distributions. Specifically, we show that differences of score functions across different environment pairs contain all the information about the latent DAG. Leveraging this property, we show that the data-generating process can be inverted by finding the inverse transform that minimizes the score differences in the latent space. Using this approach, we develop constructive proofs of identifiability and algorithms in various settings. To give an insight, there are two key properties of score functions that make this idea work. Denote $$s(z) = \nabla \log_z p(z)$$ and $$s_X(x) = \nabla \log_x p(x)$$ for observational distributions $p(z)$ and $p_X(x)$. Use superscript $$^m$$ to denote corresponding definitions in interventional environment $${\cal E}^m$$.
+
+- **Score differences are sparse**: Consider a single-node intervention, e.g., node $i$ is intervened in $${\cal E}^m$$. Then, the score difference function $$s(z) - s^m(z)$$ will be sparse, with indices of non-zero entries exactly correspond to the parents of the intervened node. This implies that given access to all single-node interventions, changes in the score functions exactly give DAG structure!
+
+{% include figure.html path="assets/img/crl_figures/intervention_score_connection.jpg" title="" class="img-fluid rounded z-depth-1" %}
+
+How we use this property to guide our learning of an inverse transform? Consider a candidate encoder $h$, and \let $\hat{Z} = h(X)$. Intuitively, we can use the sparsity of the *true latent score differences* to find the true encoder $$g^{-1}$$, i.e., the estimated latent score differences cannot be sparser than the true score differences.
+
+{% include figure.html path="assets/img/crl_figures/intuition.jpg" title="" class="img-fluid rounded z-depth-1" %}
+
+- **Latent score differences can be computed from observed score differences**: So far, all the nice properties of score functions above are for latent variables, since these properties stem from the causal relationships among the latents and the interventions. However, we have only access to observed $$X$$ variables. In terms of pure identifiability objective, one can suggest computing the score functions of $\hat{Z}$ for every possible encoder $h$, which is infeasible. Instead, we take a constructive approach and show that latent score differences can be computed from observed score differences. Specifically, $$s_{\hat Z}(\hat z) - s_{\hat Z}^{m}(\hat z) = [\text{Jac.}_{{h^{-1}}}(\hat z)]^{\top} (s_X(x) - s^{m}_X(x))$$.
 
 
 
