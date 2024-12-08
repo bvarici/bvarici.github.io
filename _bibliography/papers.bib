@@ -101,6 +101,7 @@
   year={2024},
   pdf={https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn},
   bibtex_show={true},
+  abstract={   Consider a data-generation process that transforms low-dimensional \emph{latent} causally-related variables to high-dimensional \emph{observed} variables. Causal representation learning (CRL) is the process of using the observed data to recover the latent causal variables and the causal structure among them. Despite the multitude of identifiability results under various interventional CRL settings, the existing guarantees apply exclusively to the \emph{infinite-sample} regime (i.e., infinite observed samples). This paper establishes the first sample-complexity analysis for the finite-sample regime, in which the interactions between the number of observed samples and probabilistic guarantees on recovering the latent variables and structure are established. This paper focuses on \emph{general} latent causal models, stochastic \emph{soft} interventions, and a linear transformation from the latent to the observation space. The identifiability results ensure graph recovery up to ancestors and latent variables recovery up to mixing with parent variables. Specifically, ${\cal O}((\log \frac{1}{\delta})^{4})$ samples suffice for latent graph recovery up to ancestors with probability $1 - \delta$, and ${\cal O}((\frac{1}{\epsilon}\log \frac{1}{\delta})^{4})$ samples suffice for latent causal variables recovery that is $\epsilon$ close to the identifiability class with probability $1 - \delta$.}
 }
 
 @inproceedings{varici2024general,
@@ -114,7 +115,25 @@
   bibtex_show={true},
   code = {https://github.com/bvarici/score-general-id-CRL},
   poster={AISTATS_CRL_poster.pdf},
-  slides={https://virtual.aistats.org/media/aistats-2024/Slides/6689.pdf}
+  slides={https://virtual.aistats.org/media/aistats-2024/Slides/6689.pdf},
+  abstract={This paper focuses on causal representation
+learning (CRL) under a general nonparametric latent causal model and a general transformation model that maps the latent data to
+the observational data. It establishes identifiability and achievability results using
+two hard uncoupled interventions per node
+in the latent causal graph. Notably, one does
+not know which pair of intervention environments have the same node intervened (hence,
+uncoupled). For identifiability, the paper establishes that perfect recovery of the latent
+causal model and variables is guaranteed under uncoupled interventions. For achievability,
+an algorithm is designed that uses observational and interventional data and recovers
+the latent causal model and variables with
+provable guarantees. This algorithm leverages
+score variations across different environments
+to estimate the inverse of the transformer and,
+subsequently, the latent variables. The analysis, additionally, recovers the identifiability
+result for two hard coupled interventions,
+that is when metadata about the pair of environments that have the same node intervened
+is known. This paper also shows that when observational data is available, additional faithfulness assumptions that are adopted by the
+existing literature are unnecessary.}
 }
 
 @article{varici2024score,
@@ -123,9 +142,10 @@
   author={Var{\i}c{\i}, Burak and Acart{\"u}rk, Emre and Shanmugam, Karthikeyan and Kumar, Abhishek and Tajer, Ali},
   journal={arXiv:2402.00849},
   year={2024},
-  pdf={https://arxiv.org/pdf/2402.00849.pdf},
+  pdf={https://arxiv.org/abs/2402.00849},
   bibtex_show={true},
   code={https://github.com/acarturk-e/score-based-crl},
+  abstract={This paper addresses intervention-based causal representation learning (CRL) under a general nonparametric latent causal model and an unknown transformation that maps the latent variables to the observed variables. Linear and general transformations are investigated. The paper addresses both the identifiability and achievability aspects. Identifiability refers to determining algorithm-agnostic conditions that ensure recovering the true latent causal variables and the latent causal graph underlying them. Achievability refers to the algorithmic aspects and addresses designing algorithms that achieve identifiability guarantees. By drawing novel connections between score functions (i.e., the gradients of the logarithm of density functions) and CRL, this paper designs a score-based class of algorithms that ensures both identifiability and achievability. First, the paper focuses on linear transformations and shows that one stochastic hard intervention per node suffices to guarantee identifiability. It also provides partial identifiability guarantees for soft interventions, including identifiability up to ancestors for general causal models and perfect latent graph recovery for sufficiently non-linear causal models. Secondly, it focuses on general transformations and shows that two stochastic hard interventions per node suffice for identifiability. Notably, one does not need to know which pair of interventional environments have the same node intervened. Finally, the theoretical results are empirically validated via experiments on structured synthetic data and image data.}
 }
 
 @article{varici2024separability,
@@ -135,10 +155,10 @@
   journal={Transactions on Machine Learning Research},
   issn={2835-8856},
   year={2024},
-  pdf={Varici2024-TMLR.pdf},
+  pdf={https://openreview.net/forum?id=ALRWXT1RLZ},
   bibtex_show={true},
   code={https://github.com/bvarici/TMLR-mixture-DAG},
-  url={https://openreview.net/forum?id=ALRWXT1RLZ},
+  abstract={ Directed acyclic graphs (DAGs) are effective for compactly representing causal systems and specifying the causal relationships among the system's constituents. Specifying such causal relationships in some systems requires a mixture of multiple DAGs -- a single DAG is insufficient. Some examples include time-varying causal systems or aggregated subgroups of a population. Recovering the causal structure of the systems represented by single DAGs is investigated extensively, but it remains mainly open for the systems represented by a mixture of DAGs. A major difference between single- versus mixture-DAG recovery is the existence of node pairs that are separable in the individual DAGs but become inseparable in their mixture. This paper provides the theoretical foundations for analyzing such inseparable node pairs. Specifically, the notion of \emph{emergent edges} is introduced to represent such inseparable pairs that do not exist in the single DAGs but emerge in their mixtures. Necessary conditions for identifying the emergent edges are established. Operationally, these conditions serve as sufficient conditions for separating a pair of nodes in the mixture of DAGs. These results are further extended, and matching necessary and sufficient conditions for identifying the emergent edges in tree-structured DAGs are established. Finally, a novel graphical representation is formalized to specify these conditions, and an algorithm is provided for inferring the learnable causal relations.}
 }
 
 @article{yan2024robust,
