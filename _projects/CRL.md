@@ -53,8 +53,6 @@ In our papers, we establish the connections between score functions (gradient of
 - More importantly, on achievability, we design the first provably correct algorithm that recovers $$\mathcal{G}_{Z}$$ and $$Z$$ perfectly. This algorithm is referred to as Generalized Score-based Causal Latent Estimation via Interventions (GSCALE-I).
 
 
-{% include figure.html path="assets/img/Varici2023-CRL-workshop-poster.jpg" title="Poster" class="img-fluid rounded z-depth-1" %}
-Poster from CRL Workshop @ NeurIPS 2023 
 
 
 
