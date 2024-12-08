@@ -53,10 +53,14 @@ TLDR:
 - **Soft** interventions: identifiability up to ancestors
 - Requirement: multi-node interventions are diverse enough, specified as having a full-rank intervention signature matrix.
 
-
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Sample Complexity of Interventional Causal Representation Learning</span>
 
-[[Paper]](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster.pdf)
+<!--[[Paper]](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster.pdf)-->
+
+<div class="button-container">
+  <a href="https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn" class="button-link">Paper</a>
+  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster" class="button-link">Poster</a>
+</div>
 
 TLDR: 
 - Linear transform, general causal models, one **single-node** soft intervention per node.
@@ -67,7 +71,15 @@ TLDR:
 
 - <span style="font-size: 24px;">General Identifiability and Achievability for Causal Representation Learning  (AISTATS 2024 - oral)</span>
 
-[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [[Code]](https://github.com/acarturk-e/score-based-CRL) [[Talk]](https://neurips.cc/virtual/2023/74252) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)
+<!--[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [[Code]](https://github.com/acarturk-e/score-based-CRL) [[Talk]](https://neurips.cc/virtual/2023/74252) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)-->
+
+<div class="button-container">
+  <a href="https://proceedings.mlr.press/v238/varici24a.html" class="button-link">Paper</a>
+  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+  <a href="https://neurips.cc/virtual/2023/74252" class="button-link">Talk</a>
+  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster" class="button-link">Poster</a>
+</div>
+
 
 TLDR:
 - **General transform**, general causal models, two single-node hard interventions per node suffice for element-wise identifiability (up to an intervible transform)!
@@ -77,7 +89,13 @@ TLDR:
 
 - <span style="font-size: 24px;">Score-based Causal Representation Learning: Linear and General Transformations (under submission)</span>
 
-[[Paper]](https://arxiv.org/abs/2402.00849)  [[Code]](https://github.com/acarturk-e/score-based-crl)
+<!--[[Paper]](https://arxiv.org/abs/2402.00849)  [[Code]](https://github.com/acarturk-e/score-based-crl)-->
+
+<div class="button-container">
+  <a href="https://arxiv.org/abs/2402.00849" class="button-link">Paper</a>
+  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+</div>
+
 
 TLDR: 
 - Linear transform, general causal models, one single-node intervention per node.
@@ -87,7 +105,12 @@ TLDR:
 
 - <span style="font-size: 24px;">Score-based Causal Representation Learning with Interventions</span>
 
-[[Paper]](https://arxiv.org/abs/2301.08230) 
+<!--[[Paper]](https://arxiv.org/abs/2301.08230)-->
+
+<div class="button-container">
+  <a href="https://arxiv.org/abs/2301.08230" class="button-link">Paper</a>
+  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+</div>
 
 =======================
 
