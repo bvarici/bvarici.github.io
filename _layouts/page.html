@@ -9,6 +9,10 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
+  <article>
+    {{ content }}
+  </article>
+
   {%- if page.related_publications != null and page.related_publications.size > 0 -%}
   {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
   <h2>References</h2>
@@ -17,10 +21,6 @@ layout: default
   </div>
   {%- endif %}
   
-  <article>
-    {{ content }}
-  </article>
-
 
   {%- if site.giscus and page.giscus_comments -%}
     {% include giscus.html %}
