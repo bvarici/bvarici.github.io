@@ -8,7 +8,7 @@ category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
 ---
 
-- <span style="font-size: 24px;">Linear Causal Representation Learning from Unknown Multi-node Interventions (NeurIPS 2024)</span>
+- <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
 
 [[Paper]](https://openreview.net/forum?id=weemASPtzg)  [[Code]](https://github.com/acarturk-e/umni-crl) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
 
@@ -19,7 +19,7 @@ TLDR:
 - Requirement: multi-node interventions are diverse enough, specified as having a full-rank intervention signature matrix.
 
 
-- <span style="font-size: 24px;">Sample Complexity of Interventional Causal Representation Learning (NeurIPS 2024)</span>
+- <span style="font-size: 24px;">**(NeurIPS 2024)** Sample Complexity of Interventional Causal Representation Learning</span>
 
 [Paper](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn)
 
