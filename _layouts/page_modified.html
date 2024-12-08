@@ -9,8 +9,8 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
-  {%- if page.related_publications != null and page.related_publications.size > 0 -%}
-  {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+  {%- if page_modified.related_publications != null and page_modified.related_publications > 0 -%}
+  {% assign publications = page_modified.related_publications | replace: ", ", "," | split: "," | join: "|" %}
   <h2>References</h2>
   <div class="publications">
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
@@ -23,7 +23,7 @@ layout: default
 
 
 
-  {%- if site.giscus and page.giscus_comments -%}
+  {%- if site.giscus and page_modified.giscus_comments -%}
     {% include giscus.html %}
   {%- endif -%}
 </div>
