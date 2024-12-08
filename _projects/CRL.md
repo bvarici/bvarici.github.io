@@ -8,9 +8,45 @@ category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
 ---
 
+<style>
+  .button-link {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50; /* Text and border color */
+    text-decoration: none;
+    background: transparent; /* Transparent background */
+    border: 2px solid #4CAF50; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease;
+  }
+
+  .button-link:hover {
+    background: #4CAF50; /* Solid fill on hover */
+    color: white; /* Text changes to white on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+
+  .button-container {
+    text-align: center; /* Center buttons horizontally */
+    margin-top: 20px;
+  }
+</style>
+
+
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
 
 [[Paper]](https://openreview.net/forum?id=weemASPtzg)  [[Code]](https://github.com/acarturk-e/score-based-crl) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
+
+<div class="button-container">
+  <a href="https://openreview.net/forum?id=weemASPtzg" class="button-link">Paper</a>
+  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf" class="button-link">Poster</a>
+</div>
+
 
 TLDR: 
 - Linear transform, general causal models, **unknown multi-node** interventions. Same guarantees as single-node interventions! 
