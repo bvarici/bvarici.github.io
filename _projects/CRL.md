@@ -59,7 +59,7 @@ TLDR:
 
 <div class="button-container">
   <a href="https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn" class="button-link">Paper</a>
-  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster" class="button-link">Poster</a>
+  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster.pdf" class="button-link">Poster</a>
 </div>
 
 TLDR: 
@@ -77,7 +77,7 @@ TLDR:
   <a href="https://proceedings.mlr.press/v238/varici24a.html" class="button-link">Paper</a>
   <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
   <a href="https://neurips.cc/virtual/2023/74252" class="button-link">Talk</a>
-  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster" class="button-link">Poster</a>
+  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf" class="button-link">Poster</a>
 </div>
 
 
