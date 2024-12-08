@@ -1,5 +1,5 @@
 ---
-layout: page_modified
+layout: page
 title: Score-based Causal Representation Learning
 #description: a project with a background image
 img: assets/img/CRL.png
