@@ -66,6 +66,43 @@
   slides={Varici2023-CRL-workshop-slides.pdf}
 }
 
+
+@inproceedings{varici2024linear,
+  abbr = {NeurIPS},
+  title={Linear Causal Representation Learning from Unknown Multi-node Interventions},
+  author={Var{\i}c{\i}, Burak and Acart{\"u}rk, Emre and Shanmugam, Karthikeyan and Tajer, Ali},
+  booktitle={Proc. Advances in Neural Information Processing Systems},    
+  year={2024},
+  pdf={https://arxiv.org/abs/2406.05937},
+  bibtex_show={true},
+  code = {https://github.com/acarturk-e/umni-crl},
+  poster={UMN_CRL_poster_final.pdf},
+  abstract={Despite the multifaceted recent advances in interventional causal representation learning (CRL), they primarily focus on the stylized assumption of single-node interventions. This assumption is not valid in a wide range of applications, and generally, the subset of nodes intervened in an interventional environment is fully unknown. This paper focuses on interventional CRL under unknown multi-node (UMN) interventional environments and establishes the first identifiability results for general latent causal models (parametric or nonparametric) under stochastic interventions (soft or hard) and linear transformation from the latent to observed space. Specifically, it is established that given sufficiently diverse interventional environments, (i) identifiability up to ancestors is possible using only soft interventions, and (ii) perfect identifiability is possible using hard interventions. Remarkably, these guarantees match the best-known results for more restrictive single-node interventions. Furthermore, CRL algorithms are also provided that achieve the identifiability guarantees. A central step in designing these algorithms is establishing the relationships between UMN interventional CRL and score functions associated with the statistical models of different interventional environments. Establishing these relationships also serves as constructive proof of the identifiability guarantees.}
+}
+
+@inproceedings{varici2024interventional,
+  abbr={NeurIPS},
+  title={Interventional Causal Discovery in a Mixture of DAGs},
+  author={Var{\i}c{\i}, Burak and Katz, Dmitriy A and Wei, Dennis and Sattigeri, Prasanna and Tajer, Ali},
+  booktitle={Proc. Advances in Neural Information Processing Systems},    
+  year={2024},
+  pdf={https://arxiv.org/abs/2406.08666},
+  bibtex_show={true},
+  code={https://github.com/bvarici/intervention-mixture-DAG},
+  poster={Int_Mixture_DAG_poster_final.pdf},
+  abstract={Causal interactions among a group of variables are often modeled by a single causal graph. In some domains, however, these interactions are best described by multiple co-existing causal graphs, e.g., in dynamical systems or genomics. This paper addresses the hitherto unknown role of interventions in learning causal interactions among variables governed by a mixture of causal systems, each modeled by one directed acyclic graph (DAG). Causal discovery from mixtures is fundamentally more challenging than single-DAG causal discovery. Two major difficulties stem from (i) an inherent uncertainty about the skeletons of the component DAGs that constitute the mixture and (ii) possibly cyclic relationships across these component DAGs. This paper addresses these challenges and aims to identify edges that exist in at least one component DAG of the mixture, referred to as the true edges. First, it establishes matching necessary and sufficient conditions on the size of interventions required to identify the true edges. Next, guided by the necessity results, an adaptive algorithm is designed that learns all true edges using $O(n^2)$ interventions, where $n$ is the number of nodes. Remarkably, the size of the interventions is optimal if the underlying mixture model does not contain cycles across its components. More generally, the gap between the intervention size used by the algorithm and the optimal size is quantified. It is shown to be bounded by the cyclic complexity number of the mixture model, defined as the size of the minimal intervention that can break the cycles in the mixture, which is upper bounded by the number of cycles among the ancestors of a node.}
+}
+
+@inproceedings{acarturk2024sample,
+  abbr={NeurIPS},
+  title={Sample Complexity of Interventional Causal Representation Learning},
+  author={Acart{\"u}rk, Emre and Var{\i}c{\i}, Burak and Shanmugam, Karthikeyan and Tajer, Ali},
+  booktitle={Proc. Advances in Neural Information Processing Systems},    
+  year={2024},
+  pdf={https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn},
+  bibtex_show={true},
+}
+
 @inproceedings{varici2024general,
   abbr={AISTATS (oral)},
   title={General Identifiability and Achievability for Causal Representation Learning},
@@ -78,41 +115,6 @@
   code = {https://github.com/bvarici/score-general-id-CRL},
   poster={AISTATS_CRL_poster.pdf},
   slides={https://virtual.aistats.org/media/aistats-2024/Slides/6689.pdf}
-}
-
-
-@inproceedings{varici2024linear,
-  abbr = {NeurIPS},
-  title={Linear Causal Representation Learning from Unknown Multi-node Interventions},
-  author={Var{\i}c{\i}, Burak and Acart{\"u}rk, Emre and Shanmugam, Karthikeyan and Tajer, Ali},
-  booktitle={Proc. Advances in Neural Information Processing Systems},    
-  year={2024},
-  pdf={https://arxiv.org/abs/2406.05937},
-  bibtex_show={true},
-  code = {https://github.com/acarturk-e/umni-crl},
-  poster={UMN_CRL_poster_final.pdf}
-}
-
-@inproceedings{varici2024interventional,
-  abbr={NeurIPS},
-  title={Interventional Causal Discovery in a Mixture of DAGs},
-  author={Var{\i}c{\i}, Burak and Katz, Dmitriy A and Wei, Dennis and Sattigeri, Prasanna and Tajer, Ali},
-  booktitle={Proc. Advances in Neural Information Processing Systems},    
-  year={2024},
-  pdf={https://arxiv.org/abs/2406.08666},
-  bibtex_show={true},
-  code={https://github.com/bvarici/intervention-mixture-DAG},
-  poster={Int_Mixture_DAG_poster_final.pdf}
-}
-
-@inproceedings{acarturk2024sample,
-  abbr={NeurIPS},
-  title={Sample Complexity of Interventional Causal Representation Learning},
-  author={Acart{\"u}rk, Emre and Var{\i}c{\i}, Burak and Shanmugam, Karthikeyan and Tajer, Ali},
-  booktitle={Proc. Advances in Neural Information Processing Systems},    
-  year={2024},
-  pdf={https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn},
-  bibtex_show={true},
 }
 
 @article{varici2024score,
