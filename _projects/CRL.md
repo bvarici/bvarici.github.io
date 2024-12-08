@@ -10,7 +10,7 @@ related_publications: varici2023score, varici2024general, varici2024score, varic
 
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
 
-[[Paper]](https://openreview.net/forum?id=weemASPtzg)  [[Code]](https://github.com/acarturk-e/umni-crl) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
+[[Paper]](https://openreview.net/forum?id=weemASPtzg)  [[Code]](https://github.com/acarturk-e/score-based-crl) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)
 
 TLDR: 
 - Linear transform, general causal models, **unknown multi-node** interventions. Same guarantees as single-node interventions! 
@@ -32,7 +32,7 @@ TLDR:
 
 - <span style="font-size: 24px;">General Identifiability and Achievability for Causal Representation Learning  (AISTATS 2024 - oral)</span>
 
-[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [[Code]](https://github.com/bvarici/score-general-id-CRL) [[Talk]](https://neurips.cc/virtual/2023/74252) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)
+[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [[Code]](https://github.com/acarturk-e/score-based-CRL) [[Talk]](https://neurips.cc/virtual/2023/74252) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)
 
 TLDR:
 - **General transform**, general causal models, two single-node hard interventions per node suffice for element-wise identifiability (up to an intervible transform)!
