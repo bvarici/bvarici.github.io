@@ -8,13 +8,49 @@ category: work
 related_publications: varici2024separability, varici2024interventional
 ---
 
-**NeurIPS 2024: Interventional Causal Discovery in a Mixture of DAGs**
+<style>
+  .button-link {
+    display: inline-block;
+    padding: 8px 16px; /* Smaller padding for compact buttons */
+    margin: 6px;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    color: #6A0DAD; /* Purple text and border */
+    text-decoration: none;
+    background: transparent; /* Transparent background */
+    border: 2px solid #6A0DAD; /* Purple border */
+    border-radius: 6px; /* Slightly rounded corners */
+    transition: all 0.3s ease;
+  }
 
-[Paper](https://arxiv.org/abs/2406.08666)   [Code](https://github.com/bvarici/intervention-mixture-DAG) 
+  .button-link:hover {
+    background: #6A0DAD; /* Purple fill on hover */
+    color: white; /* White text on hover */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+    transform: translateY(-1px); /* Slight lift on hover */
+  }
 
-**TMLR 2024: Separability Analysis for Causal Discovery in Mixture of DAGs**: 
+  .button-container {
+    text-align: center; /* Center buttons horizontally */
+    margin-top: 20px;
+  }
+</style>
 
-[Paper](https://openreview.net/forum?id=ALRWXT1RLZ)  [Code](https://github.com/bvarici/TMLR-mixture-DAG)
+- <span style="font-size: 24px;">**(NeurIPS 2024)** Interventional Causal Discovery in a Mixture of DAGs</span>
+
+<div class="button-container">
+  <a href="https://arxiv.org/abs/2406.08666" class="button-link">Paper</a>
+  <a href="https://github.com/bvarici/intervention-mixture-DAG" class="button-link">Code</a>
+  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Int_Mixture_DAG_poster_final" class="button-link">Poster</a>
+</div>
+
+- <span style="font-size: 24px;">**(TMLR 2024)** Separability Analysis for Causal Discovery in Mixture of DAGs</span>
+
+<div class="button-container">
+  <a href="https://openreview.net/forum?id=ALRWXT1RLZ" class="button-link">Paper</a>
+  <a href="https://github.com/bvarici/iTMLR-mixture-DAG" class="button-link">Code</a>
+</div>
+
 
 =======================
 
@@ -31,7 +67,7 @@ Causal discovery of mixture models is fundamentally more challenging than the ca
 component DAGs that constitute the mixture and (ii) possibly cyclic relationships across these component DAGs. Despite the practical relevance, these problems are underexplored in existing literature. 
 In this project, we aim to advance our understanding of causal discovery of mixture models.
 
-**Separability Analysis for Causal Discovery in Mixture of DAGs**: 
+### Separability Analysis for Causal Discovery in Mixture of DAG 
 In this paper, we formalize a framework for addressing the causal discovery objectives in a mixture of DAGs.
 First, we identify the causal relationships that can possibly be learned from those that are impossible to learn. It can be readily verified that some natural choices
 generally investigated in single DAGs are impossible when working with mixture models.
@@ -54,7 +90,7 @@ triples and show that v-structures upon nodes with varying causal mechanisms can
 built on our theoretical results to recover the learnable causal relationships.
 
 
-**Inteventional Causal Discovery in a Mixture of DAGs**: 
+### Interventional Causal Discovery in a Mixture of DAGs: 
 As discussed in our previous paper, observational data is not sufficient to distinguish true causal relationships (*true edges*) from spurious ones (*emergent edges*).
 In this paper, our objective is to identify true edges via interventions on the mixture model. 
 - First, we establish matching necessary and sufficient intervention sizes for identifying the mixture parents of a node (union of parent sets of a node in the mixture).
