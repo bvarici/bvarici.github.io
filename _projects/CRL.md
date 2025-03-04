@@ -7,6 +7,7 @@ importance: 1
 category: work
 related_publications: varici2023score, varici2024general, varici2024score, varici2024linear, acarturk2024sample
 ---
+
 <style>
   .button-link {
     display: inline-block;
@@ -34,6 +35,10 @@ related_publications: varici2023score, varici2024general, varici2024score, varic
     margin-top: 20px;
   }
 </style>
+
+- <span style="font-size: 24px;">**(AAAI 2025 Tutorial)** Causal Representation Learning</span>
+
+<!--[[Slides]](https://www.isg-rpi.com/_files/ugd/601e73_ccf7870865a74aa0b7f4fdc6660a168e.pdf)-->
 
 
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
