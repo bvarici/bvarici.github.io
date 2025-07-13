@@ -172,17 +172,22 @@ is known. This paper also shows that when observational data is available, addit
 existing literature are unnecessary.}
 }
 
-@article{varici2024score,
-  abbr={arXiv},
+@article{varici2025score,
+  abbr={JMLR},
   title={Score-based causal representation learning: Linear and General Transformations},
   author={Var{\i}c{\i}, Burak and Acart{\"u}rk, Emre and Shanmugam, Karthikeyan and Kumar, Abhishek and Tajer, Ali},
-  journal={arXiv:2402.00849},
-  year={2024},
-  pdf={https://arxiv.org/abs/2402.00849},
+  journal = {Journal of Machine Learning Research},
+  year={2025},
+  volume  = {26},
+  number  = {112},
+  pages   = {1--90},
+  pdf={https://jmlr.org/papers/volume26/24-0194/24-0194.pdf},
   bibtex_show={true},
   code={https://github.com/acarturk-e/score-based-crl},
   abstract={This paper addresses intervention-based causal representation learning (CRL) under a general nonparametric latent causal model and an unknown transformation that maps the latent variables to the observed variables. Linear and general transformations are investigated. The paper addresses both the identifiability and achievability aspects. Identifiability refers to determining algorithm-agnostic conditions that ensure recovering the true latent causal variables and the latent causal graph underlying them. Achievability refers to the algorithmic aspects and addresses designing algorithms that achieve identifiability guarantees. By drawing novel connections between score functions (i.e., the gradients of the logarithm of density functions) and CRL, this paper designs a score-based class of algorithms that ensures both identifiability and achievability. First, the paper focuses on linear transformations and shows that one stochastic hard intervention per node suffices to guarantee identifiability. It also provides partial identifiability guarantees for soft interventions, including identifiability up to ancestors for general causal models and perfect latent graph recovery for sufficiently non-linear causal models. Secondly, it focuses on general transformations and shows that two stochastic hard interventions per node suffice for identifiability. Notably, one does not need to know which pair of interventional environments have the same node intervened. Finally, the theoretical results are empirically validated via experiments on structured synthetic data and image data.}
 }
+
+
 
 @article{varici2024separability,
   abbr={TMLR},
@@ -225,7 +230,9 @@ existing literature are unnecessary.}
   booktitle={International Conference on Machine Learning},
   year={2025},
   abstract={Despite the empirical success of foundation models, we do not have a systematic characterization of the representations that these models learn. In this paper, we establish the contexture theory. It shows that a large class of representation learning methods can be characterized as learning from the association between the input and a context variable. Specifically, we show that many popular methods aim to approximate the top-d singular functions of the expectation operator induced by the context, in which case we say that the representation learns the contexture. We demonstrate the generality of the contexture theory by proving that representation learning within various learning paradigms -- supervised, self-supervised, and manifold learning -- can all be studied from such a perspective. We also prove that the representations that learn the contexture are optimal on those tasks that are compatible with the context. One important implication of the contexture theory is that once the model is large enough to approximate the top singular functions, further scaling up the model size yields diminishing returns. Therefore, scaling is not all we need, and further improvement requires better contexts. To this end, we study how to evaluate the usefulness of a context without knowing the downstream tasks. We propose a metric and show by experiments that it correlates well with the actual performance of the encoder on many real datasets.},
-  pdf={https://arxiv.org/abs/2505.01557},
+  pdf={https://openreview.net/pdf?id=4GZwFPzLgW},
+  code={https://colab.research.google.com/drive/1GdJ0Yn-PKiKfkZIwUuon3WpTpbNWEtAO?usp=sharing}
+  poster={Contextures-poster.pdf}
   bibtex_show={true}
 }
 
