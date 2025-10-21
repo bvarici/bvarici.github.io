@@ -35,18 +35,15 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
   }
 </style>
 
-- <span style="font-size: 24px;">**(AAAI 2025 Tutorial)** Causal Representation Learning</span>
+- <span style="font-size: 24px;">**AAAI 2025 Tutorial:** Causal Representation Learning</span>
 
   <div class="button-container">
     <a href="https://www.isg-rpi.com/_files/ugd/601e73_ccf7870865a74aa0b7f4fdc6660a168e.pdf" class="button-link">Slides</a>
   </div>
 
-  **TLDR**
-  - Tutorial overview of Causal Representation Learning principles.
-  - Connections to identifiability, interventions, and score-based methods.
-  - Includes new results and case studies unifying the 2023–2025 CRL papers.
+<div style="margin-top: 24px;"></div>
 
-- <span style="font-size: 24px;">**(North American School of Information Theory (NASIT) 2025 Tutorial)** Causal Representation Learning</span>
+- <span style="font-size: 24px;">**North American School of Information Theory (NASIT) 2025 Tutorial:** Causal Representation Learning</span>
 
   <div class="button-container">
     <a href="https://drive.google.com/file/d/1ew-BWBPFBziI_Au52i1MtRSlrFKnSFdZ/view" class="button-link">Slides</a>
@@ -54,10 +51,7 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
     <a href="https://mediaspace.umn.edu/media/1_468pa4d9" class="button-link">Video Part 2</a>
   </div>
 
-  **TLDR**
-  - Comprehensive tutorial on CRL foundations and recent advances.
-  - Covers identifiability, interventions, and score-based learning.
-  - Hands-on walkthrough of key algorithms with visual examples.
+<div style="margin-top: 24px;"></div>
 
 - <span style="font-size: 24px;">**(JMLR 2025)** Score-based Causal Representation Learning: Linear and General Transformations</span>
 
@@ -76,6 +70,8 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
   - **Partial Identifiability:** can recover a single latent variable given interventions on that variable.
   - **Intervention extrapolation:** score-matching enables extrapolation to *unseen* interventions.
 
+<div style="margin-top: 24px;"></div>
+
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
 
   <div class="button-container">
@@ -91,6 +87,8 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
   - **Soft** interventions: identifiability up to ancestors.
   - Key requirement: intervention diversity, expressed via a full-rank intervention signature matrix.
 
+<div style="margin-top: 24px;"></div>
+
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Sample Complexity of Interventional Causal Representation Learning</span>
 
   <div class="button-container">
@@ -103,6 +101,8 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
   - First *sample complexity* results for interventional CRL.
   - PAC-identifiability via generic score estimators.
   - Explicit sample complexity results for RKHS-based score estimators.
+
+<div style="margin-top: 24px;"></div>
 
 - <span style="font-size: 24px;">**(AISTATS 2024 – oral)** General Identifiability and Achievability for Causal Representation Learning</span>
 
@@ -119,7 +119,9 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
   - First provably correct algorithm for general transforms; validated on image experiments.
   - Removes need for faithfulness and knowledge of which environments intervene on the same node.
 
-- <span style="font-size: 24px;">**(ArXiv 2023)** Score-based Causal Representation Learning with Interventions</span>
+<div style="margin-top: 24px;"></div>
+
+- <span style="font-size: 24px;">**(arXiv 2023)** Score-based Causal Representation Learning with Interventions</span>
 
   <div class="button-container">
     <a href="https://arxiv.org/abs/2301.08230" class="button-link">Paper</a>
