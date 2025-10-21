@@ -35,107 +35,102 @@ related_publications: varici2023score, varici2024general, varici2025score, varic
   }
 </style>
 
-
 - <span style="font-size: 24px;">**(AAAI 2025 Tutorial)** Causal Representation Learning</span>
 
+  <div class="button-container">
+    <a href="https://www.isg-rpi.com/_files/ugd/601e73_ccf7870865a74aa0b7f4fdc6660a168e.pdf" class="button-link">Slides</a>
+  </div>
 
-<!--[[slides]](https://www.isg-rpi.com/_files/ugd/601e73_ccf7870865a74aa0b7f4fdc6660a168e.pdf)-->
-
-<div class="button-container">
-  <a href="https://www.isg-rpi.com/_files/ugd/601e73_ccf7870865a74aa0b7f4fdc6660a168e.pdf" class="button-link">Slides</a>
-</div>
+  **TLDR**
+  - Tutorial overview of Causal Representation Learning principles.
+  - Connections to identifiability, interventions, and score-based methods.
+  - Includes new results and case studies unifying the 2023–2025 CRL papers.
 
 - <span style="font-size: 24px;">**(North American School of Information Theory (NASIT) 2025 Tutorial)** Causal Representation Learning</span>
 
-<div class="button-container">
-  <a href="https://drive.google.com/file/d/1ew-BWBPFBziI_Au52i1MtRSlrFKnSFdZ/view" class="button-link">Slides</a>
-  <a href="https://mediaspace.umn.edu/media/1_thnye7es" class="button-link">Video Part 1</a>
-  <a href="https://mediaspace.umn.edu/media/1_468pa4d9" class="button-link">Video Part 2</a>
-</div>
+  <div class="button-container">
+    <a href="https://drive.google.com/file/d/1ew-BWBPFBziI_Au52i1MtRSlrFKnSFdZ/view" class="button-link">Slides</a>
+    <a href="https://mediaspace.umn.edu/media/1_thnye7es" class="button-link">Video Part 1</a>
+    <a href="https://mediaspace.umn.edu/media/1_468pa4d9" class="button-link">Video Part 2</a>
+  </div>
+
+  **TLDR**
+  - Comprehensive tutorial on CRL foundations and recent advances.
+  - Covers identifiability, interventions, and score-based learning.
+  - Hands-on walkthrough of key algorithms with visual examples.
 
 - <span style="font-size: 24px;">**(JMLR 2025)** Score-based Causal Representation Learning: Linear and General Transformations</span>
 
-<!--[[Paper]](https://www.jmlr.org/papers/volume26/24-0194/24-0194.pdf)  [[Code]](https://github.com/acarturk-e/score-based-crl)-->
+  <div class="button-container" style="margin-top: 4px;">
+    <a href="https://www.jmlr.org/papers/volume26/24-0194/24-0194.pdf" class="button-link">Paper</a>
+    <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+  </div>
 
-<div class="button-container">
-  <a href="https://www.jmlr.org/papers/volume26/24-0194/24-0194.pdf" class="button-link">Paper</a>
-  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
-</div>
-
-
-
-TLDR: 
-- **Linear transform**, general causal models, one single-node intervention per node.
-- *Hard* interventions: element-wise identifiability up to scaling and perfect recovery of DAG. 
-- *Soft* interventions: identifiability up to ancestors. If the causal model is sufficiently nonlinear, then the latent DAG is fully identified and the latent variables are identified up to surrounding variables (shown to be a tight result)
-- **General transform**: extended results upon the AISTATS paper, two single-node hard interventions per node suffice for element-wise identifiability (up to an intervible transform)
-- First provably correct algorithm for general transforms! Experiments with images confirm the scalability. 
-- Benefits: do not require faithfulness assumption of causal discovery, and do not require knowing which pair of environments intervene on the same node.
-- Partial Identifiability: can recover a single latent variable given interventions upon said variable (i.e. without requiring exhaustive interventions)
-- Intervention extrapolation: score-matching enables extrapolating to *unseen* interventions
+  **TLDR**
+  - **Linear transform**, general causal models, one single-node intervention per node.
+  - *Hard* interventions: element-wise identifiability up to scaling and perfect recovery of DAG.
+  - *Soft* interventions: identifiability up to ancestors. If the causal model is sufficiently nonlinear, the latent DAG is fully identified and variables are identified up to surrounding variables (tight result).
+  - **General transform**: extended results upon the AISTATS paper; two single-node hard interventions per node suffice for element-wise identifiability (up to an invertible transform).
+  - First provably correct algorithm for general transforms; image experiments confirm scalability.
+  - Benefits: no faithfulness assumption; no need to know which environments intervene on the same node.
+  - **Partial Identifiability:** can recover a single latent variable given interventions on that variable.
+  - **Intervention extrapolation:** score-matching enables extrapolation to *unseen* interventions.
 
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
 
-<!--[[Paper]](https://openreview.net/forum?id=weemASPtzg)  [[Code]](https://github.com/acarturk-e/score-based-crl) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf)-->
+  <div class="button-container">
+    <a href="https://openreview.net/forum?id=weemASPtzg" class="button-link">Paper</a>
+    <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+    <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf" class="button-link">Poster</a>
+  </div>
 
-<div class="button-container">
-  <a href="https://openreview.net/forum?id=weemASPtzg" class="button-link">Paper</a>
-  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
-  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/UMN_CRL_poster_final.pdf" class="button-link">Poster</a>
-</div>
-
-
-TLDR: 
-- Linear transform, general causal models, **unknown multi-node** interventions. Same guarantees as single-node interventions! 
-- **Hard** interventions:  element-wise identifiability up to scaling and perfect recovery of DAG. 
-- **Soft** interventions: identifiability up to ancestors
-- Requirement: multi-node interventions are diverse enough, specified as having a full-rank intervention signature matrix.
+  **TLDR**
+  - Linear transform, general causal models, **unknown multi-node** interventions.
+  - Same guarantees as single-node interventions!
+  - **Hard** interventions: element-wise identifiability up to scaling and perfect DAG recovery.
+  - **Soft** interventions: identifiability up to ancestors.
+  - Key requirement: intervention diversity, expressed via a full-rank intervention signature matrix.
 
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Sample Complexity of Interventional Causal Representation Learning</span>
 
-<!--[[Paper]](https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster.pdf)-->
+  <div class="button-container">
+    <a href="https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn" class="button-link">Paper</a>
+    <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster.pdf" class="button-link">Poster</a>
+  </div>
 
-<div class="button-container">
-  <a href="https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn" class="button-link">Paper</a>
-  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Finite_sample_CRL_poster.pdf" class="button-link">Poster</a>
-</div>
+  **TLDR**
+  - Linear transform, general causal models, one **single-node** soft intervention per node.
+  - First *sample complexity* results for interventional CRL.
+  - PAC-identifiability via generic score estimators.
+  - Explicit sample complexity results for RKHS-based score estimators.
 
-TLDR: 
-- Linear transform, general causal models, one **single-node** soft intervention per node.
-- First sample complexity results for interventional CRL!
-- Probably approximately correct (PAC)-identifiability via generic score estimators.
-- Specific sample complexity results for an RKHS-based score estimator.
+- <span style="font-size: 24px;">**(AISTATS 2024 – oral)** General Identifiability and Achievability for Causal Representation Learning</span>
 
+  <div class="button-container">
+    <a href="https://proceedings.mlr.press/v238/varici24a.html" class="button-link">Paper</a>
+    <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+    <a href="https://neurips.cc/virtual/2023/74252" class="button-link">Talk</a>
+    <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf" class="button-link">Poster</a>
+  </div>
 
-- <span style="font-size: 24px;">General Identifiability and Achievability for Causal Representation Learning  (AISTATS 2024 - oral)</span>
+  **TLDR**
+  - **General transform**, general causal models.
+  - Two single-node hard interventions per node suffice for element-wise identifiability (up to an invertible transform).
+  - First provably correct algorithm for general transforms; validated on image experiments.
+  - Removes need for faithfulness and knowledge of which environments intervene on the same node.
 
-<!--[Paper](https://proceedings.mlr.press/v238/varici24a.html)   [[Code]](https://github.com/acarturk-e/score-based-CRL) [[Talk]](https://neurips.cc/virtual/2023/74252) [[Poster]](https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf)-->
+- <span style="font-size: 24px;">**(ArXiv 2023)** Score-based Causal Representation Learning with Interventions</span>
 
-<div class="button-container">
-  <a href="https://proceedings.mlr.press/v238/varici24a.html" class="button-link">Paper</a>
-  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
-  <a href="https://neurips.cc/virtual/2023/74252" class="button-link">Talk</a>
-  <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/AISTATS_CRL_poster.pdf" class="button-link">Poster</a>
-</div>
+  <div class="button-container">
+    <a href="https://arxiv.org/abs/2301.08230" class="button-link">Paper</a>
+    <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
+  </div>
 
-
-TLDR:
-- **General transform**, general causal models, two single-node hard interventions per node suffice for element-wise identifiability (up to an intervible transform)!
-- First provably correct algorithm for general transforms! Experiments with images confirm the scalability. 
-- Benefits: do not require faithfulness assumption of causal discovery, and do not require to know which pair of environments intervene on the same node.
-
-
-
-
-
-- <span style="font-size: 24px;">Score-based Causal Representation Learning with Interventions</span>
-
-<!--[[Paper]](https://arxiv.org/abs/2301.08230)-->
-
-<div class="button-container">
-  <a href="https://arxiv.org/abs/2301.08230" class="button-link">Paper</a>
-  <a href="https://github.com/acarturk-e/score-based-crl" class="button-link">Code</a>
-</div>
+  **TLDR**
+  - Foundational version introducing the *score-based CRL* framework.
+  - Connects interventional distributions to score differences.
+  - Establishes sparsity–causality correspondence: nonzero score differences ↔ parent set of intervened node.
+  - Lays groundwork for later identifiability and algorithmic results.
 
 =======================
 
