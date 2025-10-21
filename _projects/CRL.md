@@ -45,6 +45,13 @@ related_publications: varici2023score, varici2024general, varici2024score, varic
   <a href="https://www.isg-rpi.com/_files/ugd/601e73_ccf7870865a74aa0b7f4fdc6660a168e.pdf" class="button-link">Slides</a>
 </div>
 
+- <span style="font-size: 24px;">**(North American School of Information Theory (NASIT) 2025 Tutorial)** Causal Representation Learning</span>
+
+<div class="button-container">
+  <a href="https://drive.google.com/file/d/1ew-BWBPFBziI_Au52i1MtRSlrFKnSFdZ/view" class="button-link">Slides</a>
+  <a href="https://mediaspace.umn.edu/media/1_thnye7es" class="button-link">Video Part 1</a>
+  <a href="https://mediaspace.umn.edu/media/1_468pa4d9" class="button-link">Video Part 2</a>
+</div>
 
 
 - <span style="font-size: 24px;">**(NeurIPS 2024)** Linear Causal Representation Learning from Unknown Multi-node Interventions</span>
