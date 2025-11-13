@@ -1070,3 +1070,21 @@ nav[data-toggle="toc"] {
 .publications.selected-publications h2 {
   display: none;
 }
+
+/* Mobile-specific styles for publication previews */
+
+@media (max-width: 768px) {
+  .preview {
+    /* 1. Make it much smaller (e.g., 25% of the screen width) */
+    max-width: 25% !important; 
+    height: auto !important;
+    
+    /* 2. Ensure it floats left so text wraps around it */
+    float: left !important;
+    margin-right: 10px !important;
+    margin-bottom: 5px !important;
+    
+    /* 3. Turn off absolute positioning to stop the overlap */
+    position: static !important; 
+  }
+}
