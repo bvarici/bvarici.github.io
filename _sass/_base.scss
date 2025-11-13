@@ -1071,20 +1071,10 @@ nav[data-toggle="toc"] {
   display: none;
 }
 
-/* Mobile-specific styles for publication previews */
+/* Mobile-specific: hide previews, it messes/overlays with text  */
 
 @media (max-width: 768px) {
-  .preview {
-    /* 1. Make it much smaller (e.g., 25% of the screen width) */
-    max-width: 25% !important; 
-    height: auto !important;
-    
-    /* 2. Ensure it floats left so text wraps around it */
-    float: left !important;
-    margin-right: 10px !important;
-    margin-bottom: 5px !important;
-    
-    /* 3. Turn off absolute positioning to stop the overlap */
-    position: static !important; 
+  .publications img.preview {
+    display: none;
   }
 }
