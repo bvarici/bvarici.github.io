@@ -25,7 +25,7 @@ latest_posts: false  # includes a list of the newest posts
 social: true  # includes social icons at the bottom of the page
 selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
-I am a postdoctoral researcher in the  Machine Learning Department at [CMU](https://www.ml.cmu.edu/), working with [Pradeep Ravikumar](https://www.cs.cmu.edu/~pradeepr/). Previously, I obtained my Ph.D. degree in Electrical, Computer and Systems Engineering (ECSE), Rensselaer Polytechnic Institute ([RPI](https://www.ecse.rpi.edu/)), advised by [Ali Tajer](https://www.isg-rpi.com/). During my Ph.D, my research was supported by a [IBM AI Horizons Fellowship](https://fcrc.rpi.edu/).
+I am a postdoctoral researcher in the  Machine Learning Department at [CMU](https://www.ml.cmu.edu/), working with [Pradeep Ravikumar](https://www.cs.cmu.edu/~pradeepr/). Previously, I obtained my Ph.D. degree in Electrical, Computer and Systems Engineering (ECSE), Rensselaer Polytechnic Institute ([RPI](https://www.ecse.rpi.edu/)), advised by [Ali Tajer](https://www.isg-rpi.com/). My research was supported by an [IBM AI Horizons PhD Fellowship](https://fcrc.rpi.edu/).
 
 
 
