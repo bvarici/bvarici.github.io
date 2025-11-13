@@ -7,7 +7,9 @@
   year={2021},
   bibtex_show={true},
   pdf={Varici2021-AISTATS.pdf},
-  poster={Varici2021-AISTATS-poster.pdf}
+  poster={Varici2021-AISTATS-poster.pdf},
+  preview={aistats21_thumbnail.png},
+  abstract={Probabilistic graphical models (PGMs) are effective for capturing the statistical dependencies in stochastic databases. In many domains (e.g., working with multimodal data), one faces multiple information layers that can be modeled by structurally similar PGMs.  While learning the structures of PGMs in isolation is well-investigated, the algorithmic design and performance limits of learning from multiple coupled PGMs are not well-investigated. This paper considers learning the structural similarities shared by a pair of Ising PGMs. The objective is to learn only the shared structure with no regard for the structures exclusive to either of the graphs. This is significantly different from the existing approaches that focus on learning the entire structures of the graphs. This paper proposes an algorithm for learning the shared structure, evaluates its performance empirically and analytically, and compares the performance with that of the existing approaches.}
 }
 
 
@@ -21,7 +23,9 @@
   bibtex_show={true},
   pdf={Varici2021-NeurIPS.pdf},
   poster={Varici2021-NeurIPS-poster.pdf},
-  code={https://github.com/bvarici/intervention-estimation}
+  code={https://github.com/bvarici/intervention-estimation},
+  preview={Varici2021-NeurIPS-thumbnail.jpeg},
+  abstract={This paper considers the problem of estimating the unknown intervention targets in a causal directed acyclic graph from observational and interventional data. The focus is on soft interventions in linear structural equation models (SEMs). Current approaches to causal structure learning either work with known intervention targets or use hypothesis testing to discover the unknown intervention targets even for linear SEMs. This severely limits their scalability and sample complexity. This paper proposes a scalable and efficient algorithm that consistently identifies all intervention targets. The pivotal idea is to estimate the intervention sites from the difference between the precision matrices associated with the observational and interventional datasets. It involves repeatedly estimating such sites in different subsets of variables. The proposed algorithm can be used to also update a given observational Markov equivalence class into the interventional Markov equivalence class. Consistency, Markov equivalency, and sample complexity are established analytically. Finally, simulation results on both real and synthetic data demonstrate the gains of the proposed approach for scalable causal structure recovery.}
 }
 
 
@@ -36,7 +40,9 @@
   bibtex_show={true},
   pdf = {Varici2022-UAI.pdf},
   poster = {Varici2022-UAI-poster.pdf},
-  code = {https://github.com/bvarici/uai2022-intervention-estimation-latents}
+  code = {https://github.com/bvarici/uai2022-intervention-estimation-latents},
+  preview={uai2022_experiment.jpg},
+  abstract={This paper considers the problem of estimating unknown intervention targets in causal directed acyclic graphs from observational and interventional data in the presence of latent variables. The focus is on linear structural equation models with soft interventions. The existing approaches to this problem involve performing extensive conditional independence tests, and they estimate the unknown intervention targets alongside learning the structure of the causal model in its entirety. This joint learning approach results in algorithms that are not scalable as graph sizes grow. This paper proposes an approach that does not necessitate learning the entire causal model and focuses on learning only the intervention targets. The key idea of this approach is leveraging the property that interventions impose sparse changes in the precision matrix of a linear model. The proposed framework consists of a sequence of precision difference estimation steps. Furthermore, the necessary knowledge to refine an observational Markov equivalence class (MEC) to an interventional MEC is inferred. Simulation results are provided to illustrate the scalability of the proposed algorithm and compare it with those of the existing approaches.}
 }
 
 @article{varici2023causal,
@@ -53,7 +59,11 @@
   pdf = {https://jmlr.org/papers/volume24/22-0969/22-0969.pdf},
   code = {https://github.com/bvarici/causal-bandits-linear-sem},
   poster = {JMLR_causal_bandits_poster.pdf},
-  video_short = {https://neurips.cc/virtual/2024/poster/98317}
+  selected={true},
+  video_short = {https://neurips.cc/virtual/2024/poster/98317},
+  preview={causal_bandits_thumbnail.jpeg},
+  abstract={This paper studies the problem of designing an optimal sequence of interventions in a causal graphical model to minimize cumulative regret with respect to the best intervention in hindsight. This is, naturally, posed as a causal bandit problem. The focus is on causal bandits for linear structural equation models (SEMs) and soft interventions. It is assumed that the graph's structure is known and has \(N\) nodes. Two linear mechanisms, one soft intervention and one observational, are assumed for each node, giving rise to \(2^N\) possible interventions. The majority of the existing causal bandit algorithms assume that at least the interventional distributions of the reward node's parents are fully specified. However, there are \(2^N\) such distributions (one corresponding to each intervention), acquiring which becomes prohibitive even in moderate-sized graphs. This paper dispenses with the assumption of knowing these distributions or their marginals. Two algorithms are proposed for the frequentist (UCB-based) and Bayesian (Thompson sampling-based) settings. The key idea of these algorithms is to avoid directly estimating the \(2^N\) reward distributions and instead estimate the parameters that fully specify the SEMs (linear in \(N\)) and use them to compute the rewards. In both algorithms, under boundedness assumptions on noise and the parameter space, the cumulative regrets scale as \(\tilde\{O\}(d^{L+\frac{1}{2}} \sqrt\{NT\})\), where \(d\) is the graph's maximum degree, and \(L\) is the length of its longest causal path. Additionally, a minimax lower of \(\Omega(d^\{L/2-2\}\sqrt\{T\})\) is presented, which suggests that the achievable and lower bounds conform in their scaling behavior with respect to the horizon \(T\) and graph parameters \(d\) and \(L\).},
+  rank={2}
 }
 
 @article{varici2023score,
@@ -65,18 +75,7 @@
   pdf={Varici2023-score-arxiv.pdf},
   bibtex_show={true},
   slides={Varici2023-CRL-workshop-slides.pdf},
-  abstract={This paper studies the causal representation learning problem when the latent causal variables are
-observed indirectly through an unknown linear transformation. The objectives are: (i) recovering the
-unknown linear transformation (up to scaling) and (ii) determining the directed acyclic graph (DAG)
-underlying the latent variables. Sufficient conditions for DAG recovery are established, and it is shown
-that a large class of non-linear models in the latent space (e.g., causal mechanisms parameterized by
-two-layer neural networks) satisfy these conditions. These sufficient conditions ensure that the effect of an
-intervention can be detected correctly from changes in the score. Capitalizing on this property, recovering
-a valid transformation is facilitated by the following key property: any valid transformation renders
-latent variables’ score function to necessarily have the minimal variations across different interventional
-environments. This property is leveraged for perfect recovery of the latent DAG structure using only soft
-interventions. For the special case of stochastic hard interventions, with an additional hypothesis testing
-step, one can also uniquely recover the linear transformation up to scaling and a valid causal ordering.}
+  abstract={This paper studies the causal representation learning problem when the latent causal variables are observed indirectly through an unknown linear transformation. The objectives are: (i) recovering the unknown linear transformation (up to scaling) and (ii) determining the directed acyclic graph (DAG) underlying the latent variables. Sufficient conditions for DAG recovery are established, and it is shown that a large class of non-linear models in the latent space (e.g., causal mechanisms parameterized by two-layer neural networks) satisfy these conditions. These sufficient conditions ensure that the effect of an intervention can be detected correctly from changes in the score. Capitalizing on this property, recovering a valid transformation is facilitated by the following key property: any valid transformation renders latent variables’ score function to necessarily have the minimal variations across different interventional environments. This property is leveraged for perfect recovery of the latent DAG structure using only soft interventions. For the special case of stochastic hard interventions, with an additional hypothesis testing step, one can also uniquely recover the linear transformation up to scaling and a valid causal ordering.}
 }
 
 
@@ -90,17 +89,10 @@ step, one can also uniquely recover the linear transformation up to scaling and 
   bibtex_show={true},
   code={https://github.com/acarturk-e/score-based-crl},
   poster={UMN_CRL_poster_final.pdf},
-  abstract={Despite the multifaceted recent advances in interventional causal representation learning (CRL), they primarily focus on the stylized assumption of single-node interventions. 
-This assumption is not valid in a wide range of applications, and generally, the subset of nodes intervened in an interventional environment is fully unknown. 
-This paper focuses on interventional CRL under unknown multi-node (UMN) interventional environments and establishes the first identifiability results for general latent causal models 
-(parametric or nonparametric) under stochastic interventions (soft or hard) and linear transformation from the latent to observed space. 
-Specifically, it is established that given sufficiently diverse interventional environments, (i) identifiability up to ancestors is possible using only soft interventions, 
-and (ii) perfect identifiability is possible using hard interventions. Remarkably, these guarantees match the best-known results for more restrictive single-node interventions. 
-Furthermore, CRL algorithms are also provided that achieve the identifiability guarantees. A central step in designing these algorithms is establishing the relationships between 
-UMN interventional CRL and score functions associated with the statistical models of different interventional environments. 
-Establishing these relationships also serves as constructive proof of the identifiability guarantees.},
+  abstract={Despite the multifaceted recent advances in interventional causal representation learning (CRL), they primarily focus on the stylized assumption of single-node interventions. This assumption is not valid in a wide range of applications, and generally, the subset of nodes intervened in an interventional environment is fully unknown. This paper focuses on interventional CRL under unknown multi-node (UMN) interventional environments and establishes the first identifiability results for general latent causal models (parametric or nonparametric) under stochastic interventions (soft or hard) and linear transformation from the latent to observed space. Specifically, it is established that given sufficiently diverse interventional environments, (i) identifiability up to ancestors is possible using only soft interventions, and (ii) perfect identifiability is possible using hard interventions. Remarkably, these guarantees match the best-known results for more restrictive single-node interventions. Furthermore, CRL algorithms are also provided that achieve the identifiability guarantees. A central step in designing these algorithms is establishing the relationships between UMN interventional CRL and score functions associated with the statistical models of different interventional environments. Establishing these relationships also serves as constructive proof of the identifiability guarantees.},
   video_short={https://neurips.cc/virtual/2024/poster/93136},
-  slides={https://neurips.cc/media/neurips-2024/Slides/93136.pdf}
+  slides={https://neurips.cc/media/neurips-2024/Slides/93136.pdf},
+  preview={umni_crl_thumbnail2.jpg}
 }
 
 @inproceedings{varici2024interventional,
@@ -113,20 +105,12 @@ Establishing these relationships also serves as constructive proof of the identi
   bibtex_show={true},
   code={https://github.com/bvarici/intervention-mixture-DAG},
   poster={Int_Mixture_DAG_poster_final.pdf},
-  abstract={Causal interactions among a group of variables are often modeled by a single causal graph. 
-In some domains, however, these interactions are best described by multiple co-existing causal graphs, e.g., in dynamical systems or genomics. 
-This paper addresses the hitherto unknown role of interventions in learning causal interactions among variables governed by a mixture of causal systems, each modeled by one directed acyclic graph (DAG).
-Causal discovery from mixtures is fundamentally more challenging than single-DAG causal discovery. 
-Two major difficulties stem from (i) an inherent uncertainty about the skeletons of the component DAGs that constitute the mixture and (ii) possibly cyclic relationships across these component DAGs. 
-This paper addresses these challenges and aims to identify edges that exist in at least one component DAG of the mixture, referred to as the true edges. 
-First, it establishes matching necessary and sufficient conditions on the size of interventions required to identify the true edges. 
-Next, guided by the necessity results, an adaptive algorithm is designed that learns all true edges using $O(n^2)$ interventions, where $n$ is the number of nodes. 
-Remarkably, the size of the interventions is optimal if the underlying mixture model does not contain cycles across its components. 
-More generally, the gap between the intervention size used by the algorithm and the optimal size is quantified. 
-It is shown to be bounded by the cyclic complexity number of the mixture model, defined as the size of the minimal intervention that can break the cycles in the mixture, 
-which is upper bounded by the number of cycles among the ancestors of a node.},
+  abstract={Causal interactions among a group of variables are often modeled by a single causal graph. In some domains, however, these interactions are best described by multiple co-existing causal graphs, e.g., in dynamical systems or genomics. This paper addresses the hitherto unknown role of interventions in learning causal interactions among variables governed by a mixture of causal systems, each modeled by one directed acyclic graph (DAG). Causal discovery from mixtures is fundamentally more challenging than single-DAG causal discovery. Two major difficulties stem from (i) an inherent uncertainty about the skeletons of the component DAGs that constitute the mixture and (ii) possibly cyclic relationships across these component DAGs. This paper addresses these challenges and aims to identify edges that exist in at least one component DAG of the mixture, referred to as the true edges. First, it establishes matching necessary and sufficient conditions on the size of interventions required to identify the true edges. Next, guided by the necessity results, an adaptive algorithm is designed that learns all true edges using \(O(n^2)\) interventions, where \(n\) is the number of nodes. Remarkably, the size of the interventions is optimal if the underlying mixture model does not contain cycles across its components. More generally, the gap between the intervention size used by the algorithm and the optimal size is quantified. It is shown to be bounded by the cyclic complexity number of the mixture model, defined as the size of the minimal intervention that can break the cycles in the mixture, which is upper bounded by the number of cycles among the ancestors of a node.},
   video_short={https://neurips.cc/virtual/2024/poster/93767},
-  slides={https://neurips.cc/media/neurips-2024/Slides/93767.pdf}
+  slides={https://neurips.cc/media/neurips-2024/Slides/93767.pdf},
+  selected={true},
+  preview={int_mixture_dag.jpeg},
+  rank={4},
 }
 
 @inproceedings{acarturk2024sample,
@@ -137,7 +121,9 @@ which is upper bounded by the number of cycles among the ancestors of a node.},
   year={2024},
   pdf={https://openreview.net/forum?id=XL9aaXl0u6&noteId=0uxPDmh1nn},
   bibtex_show={true},
-  poster={Finite_sample_CRL_poster.pdf}
+  poster={Finite_sample_CRL_poster.pdf},
+  preview={finite_sample_crl_experiment.png},
+  abstract={Consider a data-generation process that transforms low-dimensional latent causally-related variables to high-dimensional observed variables. Causal representation learning (CRL) is the process of using the observed data to recover the latent causal variables and the causal structure among them. Despite the multitude of identifiability results under various interventional CRL settings, the existing guarantees apply exclusively to the infinite-sample regime (i.e., infinite observed samples). This paper establishes the first sample-complexity analysis for the finite-sample regime, in which the interactions between the number of observed samples and probabilistic guarantees on recovering the latent variables and structure are established. This paper focuses on general latent causal models, stochastic soft interventions, and a linear transformation from the latent to the observation space. The identifiability results ensure graph recovery up to ancestors and latent variables recovery up to mixing with parent variables. Specifically, \(O((\log \frac\{1\}{\delta})^{4})\) samples suffice for latent graph recovery up to ancestors with probability \(1 - \delta\), and \({\cal O}((\frac\{1\}\{\epsilon\}\log \frac{1}{\delta})^{4})\) samples suffice for latent causal variables recovery that is \(\epsilon\) close to the identifiability class with probability \(1 - \delta\).}
 }
 
 @inproceedings{varici2024general,
@@ -151,31 +137,17 @@ which is upper bounded by the number of cycles among the ancestors of a node.},
   bibtex_show={true},
   code={https://github.com/acarturk-e/score-based-crl},
   poster={AISTATS_CRL_poster.pdf},
+  selected={true},
   slides={https://virtual.aistats.org/media/aistats-2024/Slides/6689.pdf},
-  abstract={This paper focuses on causal representation
-learning (CRL) under a general nonparametric latent causal model and a general transformation model that maps the latent data to
-the observational data. It establishes identifiability and achievability results using
-two hard uncoupled interventions per node
-in the latent causal graph. Notably, one does
-not know which pair of intervention environments have the same node intervened (hence,
-uncoupled). For identifiability, the paper establishes that perfect recovery of the latent
-causal model and variables is guaranteed under uncoupled interventions. For achievability,
-an algorithm is designed that uses observational and interventional data and recovers
-the latent causal model and variables with
-provable guarantees. This algorithm leverages
-score variations across different environments
-to estimate the inverse of the transformer and,
-subsequently, the latent variables. The analysis, additionally, recovers the identifiability
-result for two hard coupled interventions,
-that is when metadata about the pair of environments that have the same node intervened
-is known. This paper also shows that when observational data is available, additional faithfulness assumptions that are adopted by the
-existing literature are unnecessary.}
+  preview={aistats24_crl_thumbnail3.jpg},
+  abstract={This paper focuses on causal representation learning (CRL) under a general nonparametric latent causal model and a general transformation model that maps the latent data to the observational data. It establishes identifiability and achievability results using two hard uncoupled interventions per node in the latent causal graph. Notably, one does not know which pair of intervention environments have the same node intervened (hence, uncoupled). For identifiability, the paper establishes that perfect recovery of the latent causal model and variables is guaranteed under uncoupled interventions. For achievability, an algorithm is designed that uses observational and interventional data and recovers the latent causal model and variables with provable guarantees. This algorithm leverages score variations across different environments to estimate the inverse of the transformer and, subsequently, the latent variables. The analysis, additionally, recovers the identifiability result for two hard coupled interventions, that is when metadata about the pair of environments that have the same node intervened is known. This paper also shows that when observational data is available, additional faithfulness assumptions that are adopted by the existing literature are unnecessary.},
+  rank={5}
 }
 
 @article{varici2025score,
   abbr={JMLR},
   title={Score-based causal representation learning: Linear and General Transformations},
-  author={Var{\i}c{\i}, Burak and Acart{\"u}rk, Emre and Shanmugam, Karthikeyan and Kumar, Abhishek and Tajer, Ali},
+  author={Var{\i}c{\i}*, Burak and Acart{\"u}rk*, Emre and Shanmugam, Karthikeyan and Kumar, Abhishek and Tajer, Ali},
   journal = {Journal of Machine Learning Research},
   year={2025},
   volume  = {26},
@@ -184,7 +156,10 @@ existing literature are unnecessary.}
   pdf={https://jmlr.org/papers/volume26/24-0194/24-0194.pdf},
   bibtex_show={true},
   code={https://github.com/acarturk-e/score-based-crl},
-  abstract={This paper addresses intervention-based causal representation learning (CRL) under a general nonparametric latent causal model and an unknown transformation that maps the latent variables to the observed variables. Linear and general transformations are investigated. The paper addresses both the identifiability and achievability aspects. Identifiability refers to determining algorithm-agnostic conditions that ensure recovering the true latent causal variables and the latent causal graph underlying them. Achievability refers to the algorithmic aspects and addresses designing algorithms that achieve identifiability guarantees. By drawing novel connections between score functions (i.e., the gradients of the logarithm of density functions) and CRL, this paper designs a score-based class of algorithms that ensures both identifiability and achievability. First, the paper focuses on linear transformations and shows that one stochastic hard intervention per node suffices to guarantee identifiability. It also provides partial identifiability guarantees for soft interventions, including identifiability up to ancestors for general causal models and perfect latent graph recovery for sufficiently non-linear causal models. Secondly, it focuses on general transformations and shows that two stochastic hard interventions per node suffice for identifiability. Notably, one does not need to know which pair of interventional environments have the same node intervened. Finally, the theoretical results are empirically validated via experiments on structured synthetic data and image data.}
+  selected={true},
+  preview={crl_jmlr_overview.jpg},
+  abstract={This paper addresses intervention-based causal representation learning (CRL) under a general nonparametric latent causal model and an unknown transformation that maps the latent variables to the observed variables. Linear and general transformations are investigated. The paper addresses both the identifiability and achievability aspects. Identifiability refers to determining algorithm-agnostic conditions that ensure recovering the true latent causal variables and the latent causal graph underlying them. Achievability refers to the algorithmic aspects and addresses designing algorithms that achieve identifiability guarantees. By drawing novel connections between score functions (i.e., the gradients of the logarithm of density functions) and CRL, this paper designs a score-based class of algorithms that ensures both identifiability and achievability. First, the paper focuses on linear transformations and shows that one stochastic hard intervention per node suffices to guarantee identifiability. It also provides partial identifiability guarantees for soft interventions, including identifiability up to ancestors for general causal models and perfect latent graph recovery for sufficiently non-linear causal models. Secondly, it focuses on general transformations and shows that two stochastic hard interventions per node suffice for identifiability. Notably, one does not need to know which pair of interventional environments have the same node intervened. Finally, the theoretical results are empirically validated via experiments on structured synthetic data and image data.},
+  rank={1}
 }
 
 
@@ -199,7 +174,8 @@ existing literature are unnecessary.}
   pdf={https://openreview.net/forum?id=ALRWXT1RLZ},
   bibtex_show={true},
   code={https://github.com/bvarici/TMLR-mixture-DAG},
-  abstract={ Directed acyclic graphs (DAGs) are effective for compactly representing causal systems and specifying the causal relationships among the system's constituents. Specifying such causal relationships in some systems requires a mixture of multiple DAGs -- a single DAG is insufficient. Some examples include time-varying causal systems or aggregated subgroups of a population. Recovering the causal structure of the systems represented by single DAGs is investigated extensively, but it remains mainly open for the systems represented by a mixture of DAGs. A major difference between single- versus mixture-DAG recovery is the existence of node pairs that are separable in the individual DAGs but become inseparable in their mixture. This paper provides the theoretical foundations for analyzing such inseparable node pairs. Specifically, the notion of \emph{emergent edges} is introduced to represent such inseparable pairs that do not exist in the single DAGs but emerge in their mixtures. Necessary conditions for identifying the emergent edges are established. Operationally, these conditions serve as sufficient conditions for separating a pair of nodes in the mixture of DAGs. These results are further extended, and matching necessary and sufficient conditions for identifying the emergent edges in tree-structured DAGs are established. Finally, a novel graphical representation is formalized to specify these conditions, and an algorithm is provided for inferring the learnable causal relations.}
+  preview={tmlr_thumbnail.jpg},
+  abstract={ Directed acyclic graphs (DAGs) are effective for compactly representing causal systems and specifying the causal relationships among the system's constituents. Specifying such causal relationships in some systems requires a mixture of multiple DAGs -- a single DAG is insufficient. Some examples include time-varying causal systems or aggregated subgroups of a population. Recovering the causal structure of the systems represented by single DAGs is investigated extensively, but it remains mainly open for the systems represented by a mixture of DAGs. A major difference between single- versus mixture-DAG recovery is the existence of node pairs that are separable in the individual DAGs but become inseparable in their mixture. This paper provides the theoretical foundations for analyzing such inseparable node pairs. Specifically, the notion of emergent edges is introduced to represent such inseparable pairs that do not exist in the single DAGs but emerge in their mixtures. Necessary conditions for identifying the emergent edges are established. Operationally, these conditions serve as sufficient conditions for separating a pair of nodes in the mixture of DAGs. These results are further extended, and matching necessary and sufficient conditions for identifying the emergent edges in tree-structured DAGs are established. Finally, a novel graphical representation is formalized to specify these conditions, and an algorithm is provided for inferring the learnable causal relations.}
 }
 
 @article{yan2024robust,
@@ -209,8 +185,9 @@ existing literature are unnecessary.}
   journal={IEEE Journal on Selected Areas in Information Theory},
   year={2024},
   pdf={https://arxiv.org/pdf/2310.19794},
-  bibtex_show={true}
-}
+  bibtex_show={true},
+  preview={robust_cb_jsait.jpg},
+  abstract={The sequential design of experiments for optimizing a reward function in causal systems can be effectively modeled by the sequential design of interventions in causal bandits (CBs). In the existing literature on CBs, a critical assumption is that the causal models remain constant over time. However, this assumption does not necessarily hold in complex systems, which constantly undergo temporal model fluctuations. This paper addresses the robustness of CBs to such model fluctuations. The focus is on causal systems with linear structural equation models (SEMs). The SEMs and the time-varying pre- and post-interventional statistical models are all unknown. Cumulative regret is adopted as the design criteria, based on which the objective is to design a sequence of interventions that incur the smallest cumulative regret with respect to an oracle aware of the entire causal model and its fluctuations. First, it is established that the existing approaches fail to maintain regret sub-linearity with even a few instances of model deviation. Specifically, when the number of instances with model deviation is as few as \(T^\frac{1}{2L}\), where \(T\) is the time horizon and \(L\) is the length of the longest causal path in the graph, the existing algorithms will have linear regret in \(T\). For instance, when \(T=10^5\) and \(L=3\), model deviations in \(6\) out of \(10^5\) instances result in a linear regret. Next, a robust CB algorithm is designed, and its regret is analyzed, where upper and information-theoretic lower bounds on the regret are established. Specifically, in a graph with \(N\) nodes and maximum degree \(d\), under a general measure of model deviation \(C\), the cumulative regret is upper bounded by \(O(d^{L-\frac{1}{2}}(\sqrt\{NT\} + NC))\) and lower bounded by \(\Omega(d^\{L/2-2\}\max\\{\sqrt\{T\}, d^2C\\})\). Comparing these bounds establishes that the proposed algorithm achieves nearly optimal \(O(\sqrt\{T\})\) regret when \(C\) is \(o(\sqrt\{T\})\) and maintains sub-linear regret for a broader range of \(C\).}}
 
 @inproceedings{yan2024improved,
   abbr={ISIT},
@@ -220,8 +197,10 @@ existing literature are unnecessary.}
   year={2024},
   address={Athens, Greece},
   pdf={https://arxiv.org/pdf/2405.07795},
-  bibtex_show={true}
-}
+  bibtex_show={true},
+  preview={robust_cb_isit.jpg},
+  abstract={This paper investigates the robustness of causal bandits (CBs) in the face of temporal model fluctuations. This setting deviates from the existing literature's widely-adopted assumption of constant causal models. 
+  The focus is on causal systems with linear structural equation models (SEMs). The SEMs and the time-varying pre- and post-interventional statistical models are all unknown and subject to variations over time. The goal is to design a sequence of interventions that incur the smallest cumulative regret compared to an oracle aware of the entire causal model and its fluctuations. A robust CB algorithm is proposed, and its cumulative regret is analyzed by establishing both upper and lower bounds on the regret. It is shown that in a graph with maximum in-degree \(d\), length of the largest causal path \(L\), and an aggregate model deviation \(C\), the regret is upper bounded by \(\tilde\{O\}(d^\{L-\frac{1}{2}\}(\sqrt\{T\} + C))\) and lower bounded by \( \Omega(d^{L/2-2}\max\\{\sqrt\{T\}\; d^2C\\})\). The proposed algorithm achieves nearly optimal \(\tilde\{O\}(\sqrt\{T\})\) regret when \(C\) is \(o(\sqrt\{T\} )\), maintaining sub-linear regret for a broad range of \(C\).}}
 
 @inproceedings{zhai2025contextures,
   abbr={ICML},
@@ -233,7 +212,10 @@ existing literature are unnecessary.}
   pdf={https://openreview.net/pdf?id=4GZwFPzLgW},
   code={https://colab.research.google.com/drive/1GdJ0Yn-PKiKfkZIwUuon3WpTpbNWEtAO?usp=sharing},
   poster={Contextures-poster.pdf},
-  bibtex_show={true}
+  preview={contextures_central_argument.png},
+  selected={true},
+  bibtex_show={true},
+  rank={3}
 }
 
 @inproceedings{majid2025consistent,
@@ -242,9 +224,36 @@ existing literature are unnecessary.}
   author={Majid, Mahbod and Pukdee, Rattana and Agrawal, Vishwajeet and Var{\i}c{\i}, Burak and Ravikumar, Pradeep},
   booktitle={International Conference on Artificial Intelligence and Statistics},
   year={2025},
-  abstract={Self-supervised learning methods that mask parts of the input data and train models to predict the missing components have led to significant advances in machine learning. These approaches learn conditional distributions $p(x_T | x_S)$ simultaneously where $x_S$, $x_T$ are subsets of the observed variables. In this paper, we examine the core problem of when all these conditional distributions are consistent with some joint distribution, and whether common models used in practice can learn consistent conditionals. We explore this problem in two settings. First, for the complementary conditioning sets where $S \cup T$ is the full set of variables, we introduce the concept of path consistency, a necessary condition for a consistent joint. Second, we consider the case where we have access to $p(x_T | x_S)$ for all subsets $S, T$. In this case, we propose the concepts of autoregressive and swap consistency, which we show are necessary and sufficient conditions for a consistent joint. For both settings, we analyze when these consistency conditions hold and show that standard discriminative models may fail to satisfy them. Finally, we corroborate via experiments that proposed consistency measures can be used as proxies for evaluating the consistency of conditionals $p(x_T | x_S)$, and common parameterizations may find it hard to learn true conditionals.},
+  abstract={Self-supervised learning methods that mask parts of the input data and train models to predict the missing components have led to significant advances in machine learning. These approaches learn conditional distributions \(p(x_T | x_S) \) simultaneously where \(x_S, x_T \) are subsets of the observed variables. In this paper, we examine the core problem of when all these conditional distributions are consistent with some joint distribution, and whether common models used in practice can learn consistent conditionals. We explore this problem in two settings. First, for the complementary conditioning sets where \(S \cup T\) is the full set of variables, we introduce the concept of path consistency, a necessary condition for a consistent joint. Second, we consider the case where we have access to \(p(x_T | x_S) \) for all subsets \(S, T\). In this case, we propose the concepts of autoregressive and swap consistency, which we show are necessary and sufficient conditions for a consistent joint. For both settings, we analyze when these consistency conditions hold and show that standard discriminative models may fail to satisfy them. Finally, we corroborate via experiments that proposed consistency measures can be used as proxies for evaluating the consistency of conditionals \(p(x_T | x_S)\), and common parameterizations may find it hard to learn true conditionals.},
   pdf={https://openreview.net/forum?id=vkvJDRmOLs},
-  bibtex_show={true}
+  bibtex_show={true},
+  preview={consistent_joint_thumbnail.jpeg}
 }
 
 
+
+@article{
+kulkarni2025ropes,
+title={{ROPES}: Robotic Pose Estimation via Score-based Causal Representation Learning},
+author={Pranamya Prashant Kulkarni and Puranjay Datta and Burak Var{\i}c{\i} and Emre Acart{\"u}rk and Karthikeyan Shanmugam and Ali Tajer},
+abbr={NeurIPS Workshop},
+pdf={https://arxiv.org/abs/2510.20884},
+journal={arXiv:2510.20884, (NeurIPS 2025 Workshop on Embodied World Models for Decision Making)},
+year={2025},
+preview={ropes2.jpg},
+  bibtex_show={true},
+  abstract={Causal representation learning (CRL) has emerged as a powerful unsupervised framework that (i) disentangles the latent generative factors underlying high-dimensional data, and (ii) learns the cause-and-effect interactions among the disentangled variables. Despite extensive recent advances in identifiability and some practical progress, a substantial gap remains between theory and real-world practice. This paper takes a step toward closing that gap by bringing CRL to robotics, a domain that has motivated CRL. Specifically, this paper addresses the well-defined robot pose estimation -- the recovery of position and orientation from raw images -- by introducing Robotic Pose Estimation via Score-Based CRL (ROPES). Being an unsupervised framework, ROPES embodies the essence of interventional CRL by identifying those generative factors that are actuated: images are generated by intrinsic and extrinsic latent factors (e.g., joint angles, arm/limb geometry, lighting, background, and camera configuration) and the objective is to disentangle and recover the controllable latent variables, i.e., those that can be directly manipulated (intervened upon) through actuation. Interventional CRL theory shows that variables that undergo variations via interventions can be identified. In robotics, such interventions arise naturally by commanding actuators of various joints and recording images under varied controls. Empirical evaluations in semi-synthetic manipulator experiments demonstrate that ROPES successfully disentangles latent generative factors with high fidelity with respect to the ground truth. Crucially, this is achieved by leveraging only distributional changes, without using any labeled data. The paper also includes a comparison with a baseline based on a recently proposed semi-supervised framework. This paper concludes by positioning robot pose estimation as a near-practical testbed for CRL.}
+}
+
+
+@article{varici2025eigenfunction,
+  title={Eigenfunction extraction for ordered representation learning},
+  author={Var{\i}c{\i}*, Burak and Tsai*, Che-Ping and Ray, Ritabrata and Boffi, Nicholas M. and Ravikumar, Pradeep},
+  journal={arXiv:2510.24672},
+  abbr={arXiv},
+  year={2025},
+  pdf={https://arxiv.org/abs/2510.24672},
+  bibtex_show={true},
+  preview={ef_sample_result.png},
+  abstract={Recent advances in representation learning reveal that widely used objectives, such as contrastive and non-contrastive, implicitly perform spectral decomposition of a contextual kernel, induced by the relationship between inputs and their contexts. Yet, these methods recover only the linear span of top eigenfunctions of the kernel, whereas exact spectral decomposition is essential for understanding feature ordering and importance. In this work, we propose a general framework to extract ordered and identifiable eigenfunctions, based on modular building blocks designed to satisfy key desiderata, including compatibility with the contextual kernel and scalability to modern settings. We then show how two main methodological paradigms, low-rank approximation and Rayleigh quotient optimization, align with this framework for eigenfunction extraction. Finally, we validate our approach on synthetic kernels and demonstrate on real-world image datasets that the recovered eigenvalues act as effective importance scores for feature selection, enabling principled efficiency-accuracy tradeoffs via adaptive-dimensional representations.}
+}

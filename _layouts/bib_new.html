@@ -1,7 +1,6 @@
 ---
 ---
-<!-- <div class="row"> -->
-<div class="row" style="margin-bottom: 50px;">
+<div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -38,7 +37,7 @@
             sizes = "200px"
             class="preview z-depth-1 rounded"
             zoomable=true
-            avoid_scaling=false
+            avoid_scaling=true
             alt=entry.preview
           %}
         {% endif %}
@@ -63,8 +62,7 @@
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        {% assign clean_author_last = author_last_name | replace: "*", "" %}
-        {% if site.scholar.last_name contains clean_author_last %}
+        {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
           {% endif %}
@@ -178,16 +176,15 @@
     {% if hook_exists == 'true' %}
       {% include hook/bib.html %}
     {% endif %}
-    
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    
     <div class="periodical">
       {{ periodical | strip }}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
@@ -313,6 +310,30 @@
               data-legend="hover-right"
               style="margin-bottom: 3px;"
             ></span>
+          {% endif %}
+          {% if site.enable_publication_badges.google_scholar and entry_has_google_scholar_badge %}
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+              aria-label="Google Scholar link"
+              role="button"
+            >
+              <img
+                src="https://img.shields.io/badge/scholar-{% google_scholar_citations site.data.socials.scholar_userid entry.google_scholar_id %}-4285F4?logo=googlescholar&labelColor=beige"
+                alt="{% google_scholar_citations site.data.socials.scholar_userid entry.google_scholar_id %} Google Scholar citations"
+              >
+            </a>
+          {% endif %}
+          {% if site.enable_publication_badges.inspirehep and entry_has_inspirehep_badge %}
+            <a
+              href="https://inspirehep.net/literature/{{ entry.inspirehep_id }}"
+              aria-label="Inspirehep link"
+              role="button"
+            >
+              <img
+                src="https://img.shields.io/badge/inspire-{% inspirehep_citations entry.inspirehep_id %}-001628?logo=inspire&logoColor=001628&labelColor=beige"
+                alt="{% inspirehep_citations entry.inspirehep_id %} InspireHEP citations"
+              >
+            </a>
           {% endif %}
         </div>
       {% endif %}

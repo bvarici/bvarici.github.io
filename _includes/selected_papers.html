@@ -1,4 +1,4 @@
+<div class="publications selected-publications">
+  {% bibliography -f {{ site.scholar.bibliography }} --group_by rank --group_order ascending --query @*[selected=true]* %}
+</div>
 
-          <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} --group_by none --query @*[selected=true]* %}
-          </div>

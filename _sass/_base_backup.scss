@@ -625,7 +625,6 @@ footer.sticky-bottom {
 
 // Publications
 
-
 .publications {
   margin-top: 2rem;
 
@@ -1065,8 +1064,3 @@ nav[data-toggle="toc"] {
   }
 }
 
-
-/* This specifically targets elements that have BOTH classes */
-.publications.selected-publications h2 {
-  display: none;
-}
