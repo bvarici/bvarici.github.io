@@ -1,6 +1,7 @@
 ---
 ---
-<div class="row">
+<!-- <div class="row"> -->
+<div class="row" style="margin-bottom: 50px;">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -37,7 +38,7 @@
             sizes = "200px"
             class="preview z-depth-1 rounded"
             zoomable=true
-            avoid_scaling=true
+            avoid_scaling=false
             alt=entry.preview
           %}
         {% endif %}
@@ -62,7 +63,8 @@
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        {% if site.scholar.last_name contains author_last_name %}
+        {% assign clean_author_last = author_last_name | replace: "*", "" %}
+        {% if site.scholar.last_name contains clean_author_last %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
           {% endif %}
@@ -176,15 +178,16 @@
     {% if hook_exists == 'true' %}
       {% include hook/bib.html %}
     {% endif %}
+    
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    
     <div class="periodical">
       {{ periodical | strip }}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
-
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
@@ -254,6 +257,66 @@
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
+    {% if site.enable_publication_badges %}
+      {% assign entry_has_altmetric_badge = false %}
+      {% if entry.altmetric and entry.altmetric != 'false' %}
+        {% assign entry_has_altmetric_badge = true %}
+      {% endif %}
+
+      {% assign entry_has_dimensions_badge = false %}
+      {% if entry.dimensions and entry.dimensions != 'false' %}
+        {% assign entry_has_dimensions_badge = true %}
+      {% endif %}
+
+      {% assign entry_has_google_scholar_badge = false %}
+      {% if entry.google_scholar_id %}
+        {% assign entry_has_google_scholar_badge = true %}
+      {% endif %}
+
+      {% assign entry_has_inspirehep_badge = false %}
+      {% if entry.inspirehep_id %}
+        {% assign entry_has_inspirehep_badge = true %}
+      {% endif %}
+      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
+        <div class="badges">
+          {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
+            <span
+              class="altmetric-embed"
+              data-badge-type="2"
+              data-badge-popover="right"
+              {% if entry.altmetric != blank and entry.altmetric != 'true' %}
+                data-altmetric-id="{{ entry.altmetric }}"
+              {% elsif entry.arxiv %}
+                data-arxiv-id="{{ entry.arxiv }}"
+              {% elsif entry.eprint %}
+                data-arxiv-id="{{ entry.eprint }}"
+              {% elsif entry.doi %}
+                data-doi="{{ entry.doi }}"
+              {% elsif entry.pmid %}
+                data-pmid="{{ entry.pmid }}"
+              {% elsif entry.isbn %}
+                data-isbn="{{ entry.isbn }}"
+              {% endif %}
+            ></span>
+          {% endif %}
+          {% if site.enable_publication_badges.dimensions and entry_has_dimensions_badge %}
+            <span
+              class="__dimensions_badge_embed__"
+              {% if entry.dimensions != blank and entry.dimensions != 'true' %}
+                data-id="{{ entry.dimensions }}"
+              {% elsif entry.doi %}
+                data-doi="{{ entry.doi }}"
+              {% else %}
+                data-pmid="{{ entry.pmid }}"
+              {% endif %}
+              data-style="small_rectangle"
+              data-legend="hover-right"
+              style="margin-bottom: 3px;"
+            ></span>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endif %}
 
     {% if entry.award %}
       <!-- Hidden Award block -->
@@ -278,5 +341,11 @@
       </div>
     {% endif %}
 
+    {% if entry.video and site.enable_video_embedding %}
+      <!-- Hidden video block -->
+      <div class="abstract hidden">
+        <div style="text-align: center;">{% include video.html path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
+      </div>
+    {% endif %}
   </div>
 </div>
