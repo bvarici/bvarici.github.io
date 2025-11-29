@@ -36,7 +36,7 @@ related_publications: varici2024separability, varici2024interventional
   }
 </style>
 
-- <span style="font-size: 24px;">**(NeurIPS 2024)** Interventional Causal Discovery in a Mixture of DAGs</span>
+- <span style="font-size: 24px;">Interventional Causal Discovery in a Mixture of DAGs (NeurIPS 2024)</span>
 
 <div class="button-container">
   <a href="https://arxiv.org/abs/2406.08666" class="button-link">Paper</a>
@@ -44,7 +44,7 @@ related_publications: varici2024separability, varici2024interventional
   <a href="https://github.com/bvarici/bvarici.github.io/blob/master/assets/pdf/Int_Mixture_DAG_poster_final" class="button-link">Poster</a>
 </div>
 
-- <span style="font-size: 24px;">**(TMLR 2024)** Separability Analysis for Causal Discovery in Mixture of DAGs</span>
+- <span style="font-size: 24px;">Separability Analysis for Causal Discovery in Mixture of DAGs (TMLR 2024)</span>
 
 <div class="button-container">
   <a href="https://openreview.net/forum?id=ALRWXT1RLZ" class="button-link">Paper</a>
@@ -52,9 +52,9 @@ related_publications: varici2024separability, varici2024interventional
 </div>
 
 
-=======================
+<hr>
 
-Project summary:
+### Project summary
 
 In various applications, the observed data is heterogeneous, and most causal systems are complex. 
 - Time-varying systems: causal relationships can change over time.
