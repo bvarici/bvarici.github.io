@@ -25,8 +25,7 @@ latest_posts: false  # includes a list of the newest posts
 social: true  # includes social icons at the bottom of the page
 selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
-I am a postdoctoral researcher in the  Machine Learning Department at [CMU](https://www.ml.cmu.edu/), working with [Pradeep Ravikumar](https://www.cs.cmu.edu/~pradeepr/). Previously, I obtained my Ph.D. degree in Electrical, Computer and Systems Engineering (ECSE), Rensselaer Polytechnic Institute ([RPI](https://www.ecse.rpi.edu/)), advised by [Ali Tajer](https://www.isg-rpi.com/). My research was supported by an [IBM AI Horizons PhD Fellowship](https://fcrc.rpi.edu/).
-
+I am a postdoctoral researcher in the Machine Learning Department at [CMU](https://www.ml.cmu.edu/), working with [Pradeep Ravikumar](https://www.cs.cmu.edu/~pradeepr/). Previously, I obtained my Ph.D. degree in Electrical, Computer and Systems Engineering (ECSE), Rensselaer Polytechnic Institute ([RPI](https://www.ecse.rpi.edu/)), advised by [Ali Tajer](https://www.isg-rpi.com/). My research was supported by IBM AI Horizons PhD Fellowship. My [Ph.D. dissertation](https://www.proquest.com/docview/3071404288?pq-origsite=gscholar&fromopenview=true) has been awarded the 2025 IEEE Signal Processing Society Best Ph.D. Dissertation Award.
 
 
 <!-- I develop the statistical and algorithmic foundations needed to answer this question from the perspective of causality and identifiability, in particular *causal representation learning*.  -->
