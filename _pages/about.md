@@ -37,3 +37,4 @@ I am especially keen on leveraging shared mechanisms across diverse environments
 
 
 > **I’m currently on the academic job market!**  If you think I’d be a good fit to your department, please reach out!
+Here is my [Research Statement](https://drive.google.com/file/d/1GCE5zigeE3SXwMd8LRYhgsKyw0ouVSB8/view?usp=sharing).
