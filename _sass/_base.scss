@@ -19,9 +19,29 @@ strong {
   color: var(--global-text-color);
 }
 
+.about-emphasis-1 {
+  color: var(--about-emphasis-color-1);
+  font-weight: 500;
+}
+
+.about-emphasis-2 {
+  color: var(--about-emphasis-color-2);
+  font-weight: 500;
+}
+
+.about-announcement {
+  border-left: 4px solid var(--about-announcement-border);
+  background-color: var(--about-announcement-bg);
+  padding: 0.75rem 0.9rem;
+  margin: 0.6rem 0 1rem;
+  border-radius: 0.2rem;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
+
+
 
 table {
   td,
