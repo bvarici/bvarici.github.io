@@ -7,7 +7,7 @@ permalink: /
 
 profile:
   align: right
-  image: Burak_Varici_headshot.png
+  image: Burak_Varici_headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <div style="text-align:center;">
