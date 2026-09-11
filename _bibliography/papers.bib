@@ -258,3 +258,43 @@ preview={ropes2.jpg},
   abstract={Recent advances in representation learning reveal that widely used objectives, such as contrastive and non-contrastive, implicitly perform spectral decomposition of a contextual kernel, induced by the relationship between inputs and their contexts. Yet, these methods recover only the linear span of top eigenfunctions of the kernel, whereas exact spectral decomposition is essential for understanding feature ordering and importance. In this work, we propose a general framework to extract ordered and identifiable eigenfunctions, based on modular building blocks designed to satisfy key desiderata, including compatibility with the contextual kernel and scalability to modern settings. We then show how two main methodological paradigms, low-rank approximation and Rayleigh quotient optimization, align with this framework for eigenfunction extraction. Finally, we validate our approach on synthetic kernels and demonstrate on real-world image datasets that the recovered eigenvalues act as effective importance scores for feature selection, enabling principled efficiency-accuracy tradeoffs via adaptive-dimensional representations.}
 }
 
+@article{acarturk2026learning,
+  author={Acartürk, Emre and Varıcı, Burak and Shanmugam, Karthikeyan and Tajer, Ali},
+  journal={IEEE BITS the Information Theory Magazine}, 
+  title={Learning Generative Factors via Causal Representation Learning: A Score-Based Perspective}, 
+  year={2026},
+  month={February},
+  volume={5},
+  number={1},
+  pages={35-48},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11392728},
+  abstract={Modern generative models are highly effective in finding low-dimensional representations for complex and high-dimensional data. However, they cannot necessarily find representations that are semantically or physically meaningful, capturing the underlying physical models or laws generating the data. This renders modern representation learning solutions (e.g., deep learning) generally considered to form decisions that are not necessarily interpretable. The field of causal representation learning (CRL) has emerged to address this important gap: finding representations that capture the true physical, hidden (latent) mechanisms responsible for generating high-dimensional data. Such representations that are physically (or semantically) meaningful enable disentangling the generative factors of the data, which, in turn, facilitates interpretability, controllability, and robustness to distribution shifts. CRL achieves this by formalizing a theoretically-ground framework, the objective of which is to recover latent variables and their statistical interactions from data. This is generally done using unlabeled data, rendering the method minimally supervised. This paper provides a thorough exposition of CRL with an emphasis on interventional settings and its recent theoretical advances. The primary emphasis is on establishing a fundamental connection between interventional CRL and score estimation. That connection is the foundation for providing identifiability analysis and designing algorithms with provable guarantees},
+  doi={10.1109/MBITS.2026.3661916}}
+
+
+@inbook{doi:https://doi.org/10.1002/9781394302406.ch10,
+author = {Varıcı, Burak and Squires, Chandler and Ravikumar, Pradeep},
+publisher = {John Wiley & Sons, Ltd},
+isbn = {9781394302406},
+title = {Causal Representation Learning},
+booktitle = {Neurosymbolic AI},
+chapter = {10},
+pages = {307-346},
+doi = {https://doi.org/10.1002/9781394302406.ch10},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394302406.ch10},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781394302406.ch10},
+year = {2026},
+bibtex_show={true},
+abstract = {Causal representation learning (CRL) is a principled framework that connects representation learning with causal modeling, enabling robust and interpretable models with diverse application domains. Many tasks in CRL can be formulated in terms of causal representation models , which combine the representational power of machine learning and the causal reasoning abilities of graphical models. This chapter introduces CRL from the perspective of inverse problems (or generative ) given observed data (possibly unstructured and high-dimensional) generated from an unknown causal representation model, the learning goal is to recover the underlying model. This chapter describes recent foundational advances in CRL for solving this inverse problem by leveraging interventional data generated through interventions in the latent space of these models. Specifically, identifiability guarantees for various CRL model classes (e.g., parametric and nonparametric models) and data settings (single-node and multi-node interventions) are presented alongside practical algorithms.}
+}
+
+@article{ye2026tabular,
+  title={Tabular Numeric Stretch Transformation},
+  author={Ye, Zihao and Kim, Juyong and Sundberg, Johnna and Varici, Burak and Ravikumar, Pradeep},
+  journal={arXiv:2608.09162},
+  pdf={https://arxiv.org/pdf/2608.09162},
+  year={2026},
+  abstract={Tabular data presents unique challenges for deep learning due to its heterogeneous nature, where numeric features exhibit diverse distributions, scales, and statistical properties. Although recent advances have improved how models learn from tabular data, how numeric data are transformed into model-friendly representations remains comparatively underexplored. We introduce the stretch transformation framework, which formulates numeric feature preprocessing as an optimization problem to make the target function smoother and thus more learnable. Our framework has two variants: (1) unsupervised stretch, which uniformly redistributes feature density via minimax optimization, and (2) supervised stretch, which optimizes target-aware numeric feature transformations from the perspective of target-function smoothness by minimizing the target function's Dirichlet energy in the transformed space. Our theoretical analysis further connects this framework to several popular transformations: unsupervised stretch is closely related to Piecewise Linear Encoding through a shared piecewise-linear geometry and approaches the empirical CDF transformation as the number of bins grows, while supervised stretch becomes closely related to target encoding in the fine-binning limit. Comprehensive experiments on 38 datasets from the TALENT benchmark demonstrate that supervised stretch consistently outperforms all baselines. These results show that explicitly optimizing for target function smoothness is a powerful and underexplored strategy for tabular deep learning.},
+  bibtex_show={true},
+  preview={stretch.jpg}
+}
