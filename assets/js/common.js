@@ -1,4 +1,27 @@
 $(document).ready(function() {
+  // Keep all news accessible without JavaScript; reveal it in batches when enabled.
+  document.querySelectorAll('.news[data-page-size]').forEach(function(news) {
+    const pageSize = Number(news.dataset.pageSize);
+    const rows = Array.from(news.querySelectorAll('tbody tr'));
+    const button = news.querySelector('.news-more');
+    const status = news.querySelector('.news-status');
+    if (!button || !Number.isInteger(pageSize) || pageSize < 1) return;
+
+    let visibleCount = Math.min(pageSize, rows.length);
+    function updateNews() {
+      rows.forEach(function(row, index) { row.hidden = index >= visibleCount; });
+      const remaining = rows.length - visibleCount;
+      button.hidden = remaining === 0;
+      button.textContent = 'Show ' + Math.min(pageSize, remaining) + ' more';
+    }
+    updateNews();
+    button.addEventListener('click', function() {
+      visibleCount = Math.min(visibleCount + pageSize, rows.length);
+      updateNews();
+      status.textContent = 'Showing ' + visibleCount + ' of ' + rows.length + ' news items.';
+    });
+  });
+
   // add toggle functionality to abstract and bibtex buttons
   $('a.abstract').click(function() {
     $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
