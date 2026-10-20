@@ -1,17 +1,12 @@
-          <div class="news">
+          <div class="news" {% if include.limit and site.announcements.limit %}data-page-size="{{ site.announcements.limit }}"{% endif %}>
             {% if site.news != blank -%}
             {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
-              <table class="table table-sm table-borderless">
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless" id="news-items">
               {%- assign news = site.news | reverse -%}
-              {% if include.limit and site.announcements.limit %}
-              {% assign news_limit = site.announcements.limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %}
+              {% for item in news %}
                 <tr>
-                  <th scope="row" style="width: 20%">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <th scope="row" style="width: 20%">{{ item.date | date: "%b. %Y" }}</th>
                   <td>
                     {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -23,6 +18,10 @@
               {%- endfor %}
               </table>
             </div>
+            {% if include.limit and site.announcements.limit %}
+              <button type="button" class="news-more btn btn-sm btn-outline-secondary" aria-controls="news-items" hidden>Show {{ site.announcements.limit }} more</button>
+              <span class="news-status sr-only" aria-live="polite"></span>
+            {% endif %}
           {%- else -%}
             <p>No news so far...</p>
           {%- endif %}

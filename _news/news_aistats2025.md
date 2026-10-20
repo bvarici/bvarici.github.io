@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [On the Consistent Recovery of Joint Distributions from Conditionals](https://openreview.net/forum?id=vkvJDRmOLs) is accepted to AISTATS.
+**AISTATS 2025:** Our paper [On the Consistent Recovery of Joint Distributions from Conditionals](https://openreview.net/forum?id=vkvJDRmOLs) is accepted to AISTATS.

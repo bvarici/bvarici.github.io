@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Start the local website at http://127.0.0.1:4000.
+# Pages rebuild on edits; restart this command after changing configuration.
+# Requirements: Ruby/Bundler, the Gemfile dependencies, and ImageMagick.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+export JEKYLL_ENV=development
+exec bundle exec jekyll serve \
+  --config _config.yml,_config.local.yml \
+  --host 127.0.0.1 \
+  --port 4000 \
+  --livereload \
+  --lsi \
+  "$@"

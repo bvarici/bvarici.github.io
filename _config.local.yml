@@ -1,0 +1,7 @@
+# Local preview only: bin/preview loads this after _config.yml.
+# GitHub Actions continues to build with _config.yml alone.
+url: http://127.0.0.1:4000
+baseurl: ""
+enable_google_analytics: false
+enable_cronitor_analytics: false
+external_sources: []
